@@ -6,12 +6,10 @@ public class PlayerKeyboardController : MonoBehaviour {
     Rigidbody2D rigidbody;
     GameObject crosshair;
     public Vector2 max_speed = new Vector2(4, 4);
-    ShootWeapon shotgun;
 
 	// Use this for initialization
 	void Start () {
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
-        shotgun = GameObject.FindGameObjectWithTag("shotgun").GetComponent<ShootWeapon>();
         crosshair = GameObject.FindGameObjectWithTag("crosshair");
 	}
 	
@@ -42,9 +40,5 @@ public class PlayerKeyboardController : MonoBehaviour {
         float rot_z = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
 
-		if( Input.GetMouseButton(0) )
-        {
-            shotgun.TryShot(delta);
-        }
 	}
 }
