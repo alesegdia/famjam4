@@ -3,12 +3,14 @@ using System.Collections;
 
 public class PlayerShootKeyboardController : MonoBehaviour {
 
-    ShootWeapon shotgun;
+    ProjectileShootWeapon crossbow;
+    RaycastShootWeapon shotgun;
     GameObject crosshair;
 
 	// Use this for initialization
 	void Start () {
-        shotgun = GameObject.FindGameObjectWithTag("shotgun").GetComponent<ShootWeapon>();
+        crossbow = GameObject.FindGameObjectWithTag("Crossbow").GetComponent<ProjectileShootWeapon>();
+        shotgun = GameObject.FindGameObjectWithTag("Shotgun").GetComponent<RaycastShootWeapon>();
         crosshair = GameObject.FindGameObjectWithTag("crosshair");
 	}
 	
