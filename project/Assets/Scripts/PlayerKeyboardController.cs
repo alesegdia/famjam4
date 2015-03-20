@@ -36,8 +36,8 @@ public class PlayerKeyboardController : MonoBehaviour {
         {
             dir.y = -1;
         }
-        rigidbody.velocity = Vector2.Scale(dir, max_speed);
 
+<<<<<<< HEAD
         Vector3 delta = crosshair.transform.position - this.transform.position;
         float rot_z = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
@@ -46,5 +46,10 @@ public class PlayerKeyboardController : MonoBehaviour {
         {
 			shotgun.tryShotLastFrame = true;
         }
+=======
+        rigidbody.velocity = Vector2.Scale(dir, max_speed);
+        //rigidbody.rotation = 90;
+        //transform.LookAt(crosshair.transform);
+>>>>>>> 9372dcef3de7a2a68dd5e0d814534c4f374a066d
 	}
 }
