@@ -2,7 +2,7 @@
 # Authoring
 
 * Juan José Bernal Rodríguez (graphics)
-* Mateo Pérez, [The Game Kitchen](http://www.thegamekitchen.com/) (graphics)
+* Mateo Pérez (graphics)
 * Rolemusic (music)
-* Daniel Márquez Quintanilla, [The Game Kitchen](http://www.thegamekitchen.com/) (code)
+* Daniel Márquez Quintanilla (code)
 * Alejandro Seguí Díaz (code)
