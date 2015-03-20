@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShootWeapon : MonoBehaviour {
+public class ProjectileShootWeapon : MonoBehaviour {
 
     public float rateOfFire;
     public Object projectile;
