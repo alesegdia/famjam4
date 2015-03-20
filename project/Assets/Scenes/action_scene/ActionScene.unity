@@ -170,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa94103bd30a76498555a0dd2b4d5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toFollow: {fileID: 1163081222}
 --- !u!1001 &130204228
 Prefab:
   m_ObjectHideFlags: 0
@@ -211,7 +212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 822fa72f7b173834a9ef741c7d2d8a8f, type: 2}
       propertyPath: layerMask.m_Bits
-      value: 256
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 822fa72f7b173834a9ef741c7d2d8a8f, type: 2}
       propertyPath: spreadAngle
@@ -393,7 +394,7 @@ MonoBehaviour:
   tryShotLastFrame: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1024
   spreadAngle: 90
   numBullets: 5
 --- !u!1 &644546798
