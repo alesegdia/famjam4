@@ -44,7 +44,7 @@ public class PlayerKeyboardController : MonoBehaviour {
 
 		if( Input.GetMouseButton(0) )
         {
-			shotgun.tryShotLastFrame = true;
+            shotgun.TryShot(delta);
         }
 	}
 }

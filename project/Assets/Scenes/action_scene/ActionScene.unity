@@ -348,6 +348,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 644546799}
+  - {fileID: 2063557892}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &1163081224
@@ -459,3 +460,4 @@ MonoBehaviour:
   rateOfFire: .200000003
   projectile: {fileID: 100000, guid: 9b8f9a6a5b38ad54dbb72349a6c618b1, type: 2}
   tryShotLastFrame: 0
+  projectileSpeed: 2

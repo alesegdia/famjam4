@@ -7,6 +7,7 @@ public class ShootWeapon : MonoBehaviour {
     public Object projectile;
     public bool tryShotLastFrame;
     private float nextShoot = 0;
+    public float projectileSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -15,19 +16,24 @@ public class ShootWeapon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if( tryShotLastFrame )
-        {
-			if( Time.time > nextShoot )
-            {
-                nextShoot = Time.time + rateOfFire;
-                ShotBullet();
-                tryShotLastFrame = false;
-            }
-        }
+
 	}
 
-	void ShotBullet()
+	void ShotBullet(Vector2 dir)
     {
-        Object go = GameObject.Instantiate(projectile, this.transform.position, Quaternion.identity);
+        GameObject go = ((GameObject)GameObject.Instantiate(projectile, this.transform.position, Quaternion.identity));
+        Rigidbody2D rb2d = go.GetComponent<Rigidbody2D>();
+        rb2d.velocity = dir.normalized * projectileSpeed;
+    }
+
+	public void TryShot(Vector2 dir)
+    {
+		if( Time.time > nextShoot )
+		{
+			nextShoot = Time.time + rateOfFire;
+			ShotBullet(dir);
+			tryShotLastFrame = false;
+		}
+
     }
 }
