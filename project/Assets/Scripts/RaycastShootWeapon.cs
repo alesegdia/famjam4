@@ -44,6 +44,7 @@ public class RaycastShootWeapon : MonoBehaviour {
             if (hit != null && hit.collider != null && hit.collider.gameObject.tag == "Enemy")
             {
                 Debug.Log(Time.time + ": hit enemy!");
+                hit.collider.gameObject.GetComponent<Health>().currentHealth--;
             }
         }
     }

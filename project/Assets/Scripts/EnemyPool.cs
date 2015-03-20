@@ -19,6 +19,8 @@ public class EnemyPool : MonoBehaviour {
             fc.targetTag = "Player";
             LookAtController lac = go.GetComponent<LookAtController>();
             lac.target = GameObject.FindGameObjectWithTag("Player");
+            Enemy enemy = go.GetComponent<Enemy>();
+            enemy.pool = this;
             go.SetActive(false);
             pool.Enqueue(go);
         }
