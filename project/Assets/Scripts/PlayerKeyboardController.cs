@@ -6,11 +6,13 @@ public class PlayerKeyboardController : MonoBehaviour {
     Rigidbody2D rigidbody;
     GameObject crosshair;
     public Vector2 max_speed = new Vector2(4, 4);
+    ShootWeapon shotgun;
 
 	// Use this for initialization
 	void Start () {
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
-        //crosshair = GameObject.FindGameObjectWithTag("crosshair");
+        shotgun = GameObject.FindGameObjectWithTag("shotgun").GetComponent<ShootWeapon>();
+        crosshair = GameObject.FindGameObjectWithTag("crosshair");
 	}
 	
 	// Update is called once per frame
@@ -36,7 +38,13 @@ public class PlayerKeyboardController : MonoBehaviour {
         }
 
         rigidbody.velocity = Vector2.Scale(dir, max_speed);
-        //rigidbody.rotation = 90;
-        //transform.LookAt(crosshair.transform);
+        Vector3 delta = crosshair.transform.position - this.transform.position;
+        float rot_z = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+
+		if( Input.GetMouseButton(0) )
+        {
+			shotgun.tryShotLastFrame = true;
+        }
 	}
 }
