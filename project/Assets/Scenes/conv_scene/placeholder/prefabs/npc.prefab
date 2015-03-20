@@ -9,7 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 403906}
   - 212: {fileID: 21203906}
+<<<<<<< HEAD
+  - 58: {fileID: 5895124}
+=======
   - 50: {fileID: 5003906}
+>>>>>>> 7ae77b87fdcb7f878ffc1d0817020be5d59f97f8
   m_Layer: 0
   m_Name: npc
   m_TagString: Untagged
@@ -29,12 +33,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
+--- !u!58 &5895124
+CircleCollider2D:
+=======
 --- !u!50 &5003906
 Rigidbody2D:
+>>>>>>> 7ae77b87fdcb7f878ffc1d0817020be5d59f97f8
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103906}
+<<<<<<< HEAD
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .159999996
+  m_Center: {x: 0, y: 0}
+=======
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
@@ -44,6 +60,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+>>>>>>> 7ae77b87fdcb7f878ffc1d0817020be5d59f97f8
 --- !u!212 &21203906
 SpriteRenderer:
   m_ObjectHideFlags: 1
