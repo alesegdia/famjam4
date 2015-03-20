@@ -213,6 +213,14 @@ Prefab:
       propertyPath: layerMask.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 822fa72f7b173834a9ef741c7d2d8a8f, type: 2}
+      propertyPath: spreadAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 822fa72f7b173834a9ef741c7d2d8a8f, type: 2}
+      propertyPath: numBullets
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 822fa72f7b173834a9ef741c7d2d8a8f, type: 2}
   m_RootGameObject: {fileID: 512409908}
@@ -386,6 +394,8 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  spreadAngle: 90
+  numBullets: 5
 --- !u!1 &644546798
 GameObject:
   m_ObjectHideFlags: 0
