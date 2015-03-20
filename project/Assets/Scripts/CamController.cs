@@ -14,6 +14,7 @@ public class CamController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = toFollow.transform.position;
+        //this.transform.position = toFollow.transform.position;
+        this.transform.position = new Vector3(toFollow.transform.position.x, toFollow.transform.position.y, this.transform.position.z );
 	}
 }
