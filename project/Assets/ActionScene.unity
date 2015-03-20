@@ -74,18 +74,18 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &274313041
+--- !u!1 &53569940
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 274313046}
-  - 20: {fileID: 274313045}
-  - 92: {fileID: 274313044}
-  - 124: {fileID: 274313043}
-  - 81: {fileID: 274313042}
+  - 4: {fileID: 53569945}
+  - 20: {fileID: 53569944}
+  - 92: {fileID: 53569943}
+  - 124: {fileID: 53569942}
+  - 81: {fileID: 53569941}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -93,33 +93,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &274313042
+--- !u!81 &53569941
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 274313041}
+  m_GameObject: {fileID: 53569940}
   m_Enabled: 1
---- !u!124 &274313043
+--- !u!124 &53569942
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 274313041}
+  m_GameObject: {fileID: 53569940}
   m_Enabled: 1
---- !u!92 &274313044
+--- !u!92 &53569943
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 274313041}
+  m_GameObject: {fileID: 53569940}
   m_Enabled: 1
---- !u!20 &274313045
+--- !u!20 &53569944
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 274313041}
+  m_GameObject: {fileID: 53569940}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -133,7 +133,7 @@ Camera:
   near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -146,14 +146,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
---- !u!4 &274313046
+--- !u!4 &53569945
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 274313041}
+  m_GameObject: {fileID: 53569940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
