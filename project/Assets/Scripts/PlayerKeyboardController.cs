@@ -10,7 +10,7 @@ public class PlayerKeyboardController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
-        //crosshair = GameObject.Find("crosshair");
+        //crosshair = GameObject.FindGameObjectWithTag("crosshair");
 	}
 	
 	// Update is called once per frame
@@ -36,7 +36,7 @@ public class PlayerKeyboardController : MonoBehaviour {
         }
 
         rigidbody.velocity = Vector2.Scale(dir, max_speed);
+        //rigidbody.rotation = 90;
         //transform.LookAt(crosshair.transform);
-
 	}
 }
