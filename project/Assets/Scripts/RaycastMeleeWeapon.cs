@@ -12,6 +12,8 @@ public class RaycastMeleeWeapon : Weapon {
     public int numHits = 1;
 
     public float rayLimit = Mathf.Infinity;
+
+    public int damage = 1;
     
     float anglePerBullet;
     Quaternion quatSpreadAngleFrom;
@@ -47,7 +49,7 @@ public class RaycastMeleeWeapon : Weapon {
             {
 				alreadyHit.Add(hit.collider);
                 Debug.Log(Time.time + ": hit enemy!");
-                hit.collider.gameObject.GetComponent<Health>().currentHealth--;
+                hit.collider.gameObject.GetComponent<Health>().currentHealth -= damage;
             }
         }
     }
