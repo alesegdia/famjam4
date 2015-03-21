@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class EnemyPool : MonoBehaviour {
 
     public GameObject prefab;
-    public int maxElements = 30;
+    public int maxElements = 10;
     Queue<GameObject> pool = new Queue<GameObject>();
     public List<Transform> initialSpawns;
     GameObject player;
@@ -17,6 +17,7 @@ public class EnemyPool : MonoBehaviour {
 		for( int i = 0; i < maxElements; i++ )
         {
             GameObject go = (GameObject)GameObject.Instantiate(((Object)prefab));
+            go.transform.position = new Vector3(1000, 1000, 1000);
 
             FollowController fc = go.GetComponent<FollowController>();
             fc.target = player;
@@ -37,18 +38,15 @@ public class EnemyPool : MonoBehaviour {
             lac.enabled = false;
             agent.alwaysAttack = aa;
             aa.enabled = false;
-            agent.vampire = false;
-            agent.aggresive = false;
+            EnemyAgent.vampire = false;
+            EnemyAgent.aggresive = false;
             agent.SetupAgent();
 
             go.SetActive(false);
             pool.Enqueue(go);
+            Debug.Log(go.activeSelf);
         }
 
-		foreach( Transform t in initialSpawns )
-        {
-            SpawnEnemy(t.transform.position);
-        }
 	}
 
 	public void NotifyDead( Enemy e )

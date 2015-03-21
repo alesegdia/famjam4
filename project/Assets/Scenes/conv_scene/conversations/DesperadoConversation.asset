@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
+  m_Name: DesperadoConversation
+  m_EditorClassIdentifier: 
+  lines:
+  - line: This reminds me of a joke. This guy comes into a bar...walks to the bartender
+      and says...
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: '..."Bartender, I got a bet for you. I''ll bet you $3000 that I can piss
+      into that glass over there and not spill a drop."'
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: The bartender looks at the glass. It's 15 feet away.
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: He says "You're telling me you'll bet me $3000 that you can piss, standing
+      here into that glass, and not spill a single drop?"
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: 'Customer looks up and says: "That''s right."'
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: Bartender says, "You've got a bet."
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: The guy goes, "Okay, here we go."
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: Pulls out his thing.
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: He's thinking about the glass.
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: Thinking about his dick.
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: Dick, glass, dick, glass, dick, glass, dick, glass.
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 
+  - line: (I just wonder how many times did the developer write that word...)
+    color: {r: 1, g: .931034446, b: 0, a: 1}
+    sendMessage: 

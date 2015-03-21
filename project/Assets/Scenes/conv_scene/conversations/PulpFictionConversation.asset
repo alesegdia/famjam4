@@ -15,7 +15,7 @@ MonoBehaviour:
   - line: Okay now, tell me about the hash bars? Because we aren't in one don't we
     color: {r: .647058845, g: .522109568, b: 0, a: 1}
     sendMessage: 
-  - line: Of course not, we are not in the motherfucking Amsterdam. What so you want
+  - line: Of course not, we are not in the motherfuckin' Amsterdam. What so you want
       to know?
     color: {r: 1, g: 0, b: 0, a: 1}
     sendMessage: 
@@ -24,7 +24,7 @@ MonoBehaviour:
     sendMessage: 
   - line: Yeah, it's legal, but is ain't a hundred percent legal. I mean you can't
       walk into a restaurant, roll a joint, and start puffin' away You're only supposed
-      to smoke in your homeor certain designated places.
+      to smoke in your home or certain designated places.
     color: {r: .996078432, g: 0, b: 0, a: 1}
     sendMessage: 
   - line: Although I heard in some cities like Seville you can do it...
