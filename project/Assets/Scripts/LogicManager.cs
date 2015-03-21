@@ -6,7 +6,7 @@ public class LogicManager : MonoBehaviour {
     public enum LogicStates
     {
         PLAYING_CONVERSATION_PART = 0,
-        CONVERSATION,
+        CONVERSATION
     };
 
     [SerializeField]
@@ -108,10 +108,10 @@ public class LogicManager : MonoBehaviour {
         switch( currentState )
         {
             case LogicStates.PLAYING_CONVERSATION_PART:
-                player.EnableAllControllers( true );
+                player.EnableAllMovementControllers( true );
                 break;
             case LogicStates.CONVERSATION:
-                player.EnableAllControllers( false );
+                player.EnableAllMovementControllers( false );
                 // show the UI
                 break;
         }
@@ -123,5 +123,11 @@ public class LogicManager : MonoBehaviour {
         {
             instance = null;
         }
+    }
+
+    public void LoadScene( string sceneName )
+    {
+        player.EnableAll(false);
+        Application.LoadLevel( sceneName );
     }
 }

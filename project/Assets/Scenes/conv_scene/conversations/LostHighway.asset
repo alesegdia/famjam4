@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
+  m_Name: LostHighway
+  m_EditorClassIdentifier: 
+  lines:
+  - line: We've met before, haven't we?
+    color: {r: .568627477, g: .380392164, b: .600000024, a: 1}
+    sendMessage: 
+  - line: I don't think so. Where was it you think we met?
+    color: {r: .397058845, g: .397058845, b: .397058845, a: 1}
+    sendMessage: 
+  - line: At your house. Don't you remember?
+    color: {r: .564705908, g: .380392164, b: .596078455, a: 1}
+    sendMessage: 
+  - line: No, I don't.
+    color: {r: .396078438, g: .396078438, b: .396078438, a: 1}
+    sendMessage: 
+  - line: Are you sure?
+    color: {r: .56078434, g: .380392164, b: .592156887, a: 1}
+    sendMessage: 
+  - line: Of course.
+    color: {r: .396078438, g: .396078438, b: .396078438, a: 1}
+    sendMessage: 
+  - line: As a matter of fact, I'm there right now.
+    color: {r: .490196079, g: .333333343, b: .513725519, a: 1}
+    sendMessage: 
+  - line: What do you mean? You're where right now?
+    color: {r: .396078438, g: .396078438, b: .396078438, a: 1}
+    sendMessage: 
+  - line: At your house.
+    color: {r: .490196079, g: .333333343, b: .509803951, a: 1}
+    sendMessage: 
+  - line: That's fucking crazy, man!
+    color: {r: .396078438, g: .396078438, b: .396078438, a: 1}
+    sendMessage: 
