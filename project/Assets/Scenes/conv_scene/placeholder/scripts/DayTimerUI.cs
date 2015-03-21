@@ -71,7 +71,16 @@ public class DayTimerUI : MonoBehaviour
         {
             time = string.Format("{0} 00", currentHour.ToString());
         }
-        GUI.Label( screenRect, time, skin.label );
+
+        GUIStyle style = skin.FindStyle( "timer" );
+        if (style != null)
+        {
+            GUI.Label(screenRect, time, skin.label);
+        }
+        else
+        {
+            GUI.Label(screenRect, time, skin.label );
+        }
     }
 
     void NotifyMidnight()
