@@ -1,15 +1,16 @@
 fileFormatVersion: 2
-guid: 23a1c840cf41b4947b6a14c4bf07c7d4
+guid: 1decfe2867edbcf4e89ac73afd7eb05b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: prota1_upperbody_idle_0
-    21300002: prota1_upperbody_idle_1
-    21300004: prota1_upperbody_idle_2
-    21300006: prota1_upperbody_idle_3
-    21300008: prota1_upperbody_idle_4
-    21300010: prota1_upperbody_idle_5
-    21300012: prota1_upperbody_idle_6
-    21300014: prota1_upperbody_idle_7
+    21300000: p1_upper_noweapon_idle0
+    21300002: prota1_upperbody_idle_no_weapon_0
+    21300004: prota1_upperbody_idle_no_weapon_1
+    21300006: prota1_upperbody_idle_no_weapon_2
+    21300008: prota1_upperbody_idle_no_weapon_3
+    21300010: prota1_upperbody_idle_no_weapon_4
+    21300012: prota1_upperbody_idle_no_weapon_5
+    21300014: prota1_upperbody_idle_no_weapon_6
+    21300016: prota1_upperbody_idle_no_weapon_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,7 +52,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: prota1_upperbody_idle_0
+    - name: prota1_upperbody_idle_no_weapon_0
       rect:
         serializedVersion: 2
         x: 0
@@ -61,7 +62,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: prota1_upperbody_idle_1
+    - name: prota1_upperbody_idle_no_weapon_1
       rect:
         serializedVersion: 2
         x: 32
@@ -71,7 +72,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: prota1_upperbody_idle_2
+    - name: prota1_upperbody_idle_no_weapon_2
       rect:
         serializedVersion: 2
         x: 64
@@ -81,7 +82,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: prota1_upperbody_idle_3
+    - name: prota1_upperbody_idle_no_weapon_3
       rect:
         serializedVersion: 2
         x: 96
@@ -91,7 +92,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: prota1_upperbody_idle_4
+    - name: prota1_upperbody_idle_no_weapon_4
       rect:
         serializedVersion: 2
         x: 128
@@ -101,7 +102,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: prota1_upperbody_idle_5
+    - name: prota1_upperbody_idle_no_weapon_5
       rect:
         serializedVersion: 2
         x: 160
@@ -111,7 +112,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: prota1_upperbody_idle_6
+    - name: prota1_upperbody_idle_no_weapon_6
       rect:
         serializedVersion: 2
         x: 192
@@ -121,7 +122,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: prota1_upperbody_idle_7
+    - name: prota1_upperbody_idle_no_weapon_7
       rect:
         serializedVersion: 2
         x: 224
