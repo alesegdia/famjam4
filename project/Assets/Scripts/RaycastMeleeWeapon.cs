@@ -46,9 +46,7 @@ public class RaycastMeleeWeapon : Weapon {
             hit = Physics2D.Raycast(this.transform.position, tmp, rayLimit, collisionLayer);
             if (hit != null && hit.collider != null && Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer) && !alreadyHit.Contains(hit.collider) )
             {
-				Debug.Log("SHOOT!");
 				alreadyHit.Add(hit.collider);
-                Debug.Log(Time.time + ": hit enemy!");
                 hit.collider.gameObject.GetComponent<Health>().currentHealth -= damage;
             }
         }

@@ -1241,3 +1241,52 @@ MonoBehaviour:
   tryShotLastFrame: 0
   projectile: {fileID: 100000, guid: 9b8f9a6a5b38ad54dbb72349a6c618b1, type: 2}
   projectileSpeed: 30
+--- !u!1 &2094822448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2094822450}
+  - 114: {fileID: 2094822449}
+  m_Layer: 0
+  m_Name: WaveDirector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2094822449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094822448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8418baa892aefd94c8760123fda6abae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstWave:
+    seconds: 0
+  secondWave:
+    seconds: 0
+    spawners: []
+  thirdWave:
+    seconds: 0
+    spawners: []
+  SecondWaveSeconds: 0
+  ThirdWaveSeconds: 0
+--- !u!4 &2094822450
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094822448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0224859118, y: .142021284, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
