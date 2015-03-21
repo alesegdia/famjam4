@@ -18,7 +18,5 @@ public class AngleLookAtAnimatorController : MonoBehaviour {
 		float angle = rot.eulerAngles.z;
         dir = ((int)((360f-angle+23f) / 45f));
 		animator.SetInteger("Direction", dir);
-        Debug.Log("angle: " + angle);
-        Debug.Log("dir: " + dir);
 	}
 }
