@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
+  m_Name: PulpFictionConversation2
+  m_EditorClassIdentifier: 
+  lines:
+  - line: Hey Vincent, you remember Antwan Rockamora? Half-black, half-Samoan, usta
+      call him Tony Rocky Horror.
+    color: {r: 1, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: Yeah maybe, fat right?
+    color: {r: .643137276, g: .517647088, b: 0, a: 1}
+    sendMessage: 
+  - line: I wouldn't go so far as to call the brother fat. He's got a weight problem.
+      What's the nigger gonna do, he's Samoan.
+    color: {r: 1, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: I think I know who you mean, what about him?
+    color: {r: .639215708, g: .513725519, b: 0, a: 1}
+    sendMessage: 
+  - line: Well, Marsellus fucked his ass up good. And word around the campfire, it
+      was on account of Marsellus Wallace's wife.
+    color: {r: .996078432, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: What'd he do, fuck her?
+    color: {r: .635294139, g: .509803951, b: 0, a: 1}
+    sendMessage: 
+  - line: No no no no no no no, nothin' that bad.
+    color: {r: .992156863, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: Well what then?
+    color: {r: .631372571, g: .505882382, b: 0, a: 1}
+    sendMessage: 
+  - line: He gave her a foot massage.
+    color: {r: .988235295, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: A foot massage?
+    color: {r: .627451003, g: .501960814, b: 0, a: 1}
+    sendMessage: 
+  - line: Yep
+    color: {r: .984313726, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: That's all?
+    color: {r: .623529434, g: .498039216, b: 0, a: 1}
+    sendMessage: 
+  - line: Yup
+    color: {r: .980392158, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: What did Marsellus do?
+    color: {r: .619607866, g: .498039216, b: 0, a: 1}
+    sendMessage: 
+  - line: 'Sent a couple of guys over to his place. They took him out on the patio
+      of his apartment, threw his ass over the balcony. Nigger fell four stories. '
+    color: {r: .980392158, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: "They had this garden at the bottom, enclosed in glass, like one of them
+      greenhouses \u2013 nigger fell through that. Since then, he's kinda developed
+      a speech impediment."
+    color: {r: .980392158, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: That's a damn shame.
+    color: {r: .615686297, g: .498039216, b: 0, a: 1}
+    sendMessage: 
