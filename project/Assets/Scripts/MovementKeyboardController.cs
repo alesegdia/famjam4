@@ -7,9 +7,12 @@ public class MovementKeyboardController : MonoBehaviour {
     Rigidbody2D pawnRigidbody;
     public Vector2 max_speed = new Vector2(4, 4);
 
+    public bool left, right, up, down;
+
 	// Use this for initialization
 	void Start () {
         pawnRigidbody = pawn.GetComponent<Rigidbody2D>();
+        left = right = up = down = false;
 	}
 	
 	// Update is called once per frame
@@ -17,11 +20,16 @@ public class MovementKeyboardController : MonoBehaviour {
 
         Vector2 dir = new Vector2(0,0);
 
-		if( Input.GetKey(KeyCode.A) ) dir.x = -1;
-		else if( Input.GetKey(KeyCode.D) ) dir.x = 1;
+        left = Input.GetKey(KeyCode.A);
+        right = Input.GetKey(KeyCode.D);
+        up = Input.GetKey(KeyCode.W);
+        down = Input.GetKey(KeyCode.S);
 
-		if( Input.GetKey(KeyCode.W) ) dir.y = 1;
-		else if( Input.GetKey(KeyCode.S) ) dir.y = -1;
+		if( left ) dir.x = -1;
+		else if( right ) dir.x = 1;
+
+		if( up ) dir.y = 1;
+		else if( down ) dir.y = -1;
 
         pawnRigidbody.velocity = Vector2.Scale(dir, max_speed);
 	}
