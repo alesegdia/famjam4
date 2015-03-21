@@ -7,8 +7,9 @@ public class Player : MonoBehaviour {
     public LookAtMouse LookAtMouseCtrl;
     public Rigidbody2D pawn;
     public Weapon WeaponInUse;
+    public ConversationController ConvController;
 
-    public void EnableAllControllers( bool enabled )
+    public void EnableAllMovementControllers( bool enabled )
     {
         if ( MovementController )
             MovementController.enabled = enabled;
@@ -16,5 +17,17 @@ public class Player : MonoBehaviour {
             LookAtController.enabled = enabled;
         if( LookAtMouseCtrl )
             LookAtMouseCtrl.enabled = enabled;
+    }
+
+    public void EnableAll(bool enabled)
+    {
+        if (MovementController)
+            MovementController.enabled = enabled;
+        if (LookAtController)
+            LookAtController.enabled = enabled;
+        if (LookAtMouseCtrl)
+            LookAtMouseCtrl.enabled = enabled;
+        if (ConvController)
+            ConvController.enabled = enabled;
     }
 }
