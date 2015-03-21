@@ -6,4 +6,11 @@ public class Player : MonoBehaviour {
     public LookAtController LookAtController;
     public LookAtMouse LookAtMouseCtrl;
     public Rigidbody2D pawn;
+
+    public void DisableAllControllers()
+    {
+        MovementController.enabled = false;
+        LookAtController.enabled = false;
+        LookAtMouseCtrl.enabled = false;
+    }
 }
