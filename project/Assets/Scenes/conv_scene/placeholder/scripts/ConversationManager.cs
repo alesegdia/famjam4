@@ -47,7 +47,7 @@ public class ConversationManager : MonoBehaviour
                 {
                     if (!string.IsNullOrEmpty(currentConversation.lines[currentIndex].SendMessage))
                     {
-                        MessageACK ack;
+                        MessageACK ack = new MessageACK();
                         ack.received = false;
                         ack.callback = ConversationLineEvent_Completed;
                         string methodName = string.Format("{0}_{1}", currentConversation.name, currentConversation.lines[currentIndex].SendMessage);
@@ -145,7 +145,7 @@ public class ConversationManager : MonoBehaviour
     }
 }
 
-public struct MessageACK
+public class MessageACK
 {
     public bool received;
     public ConversationManager.ConversationLineCallback callback;
