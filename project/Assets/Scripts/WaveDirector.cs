@@ -63,6 +63,8 @@ public class WaveDirector : MonoBehaviour {
 		baseTime = Time.time;
         isPlaying = true;
     }
+
+    public GameObject[] firstWavePlaceHolders;
 	
 	// Update is called once per frame
 	void Update () {
@@ -100,10 +102,18 @@ public class WaveDirector : MonoBehaviour {
     private void HumanToVampireTransformation()
     {
         Debug.Log("HumanToVampireTransformation");
+		foreach( EnemyAgent e in GameObject.FindObjectsOfType<EnemyAgent>() )
+        {
+            e.vampire = true;
+        }
     }
 
     private void TurnEnemiesAggresive()
     {
         Debug.Log("TurnEnemiesAggresive");
+		foreach( EnemyAgent e in GameObject.FindObjectsOfType<EnemyAgent>() )
+        {
+            e.aggresive = true;
+        }
     }
 }

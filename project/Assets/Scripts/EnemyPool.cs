@@ -37,6 +37,9 @@ public class EnemyPool : MonoBehaviour {
             lac.enabled = false;
             agent.alwaysAttack = aa;
             aa.enabled = false;
+            agent.vampire = false;
+            agent.aggresive = false;
+            agent.SetupAgent();
 
             go.SetActive(false);
             pool.Enqueue(go);
