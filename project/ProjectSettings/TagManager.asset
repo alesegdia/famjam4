@@ -48,3 +48,15 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: furniture
+    userID: 1
+    uniqueID: 2047383463
+    locked: 0
+  - name: npcs
+    userID: 2
+    uniqueID: 3500856833
+    locked: 0
+  - name: foreground
+    userID: 3
+    uniqueID: 3595951775
+    locked: 0
