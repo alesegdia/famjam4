@@ -6,4 +6,5 @@ public class Player : MonoBehaviour {
     public LookAtController LookAtController;
     public LookAtMouse LookAtMouseCtrl;
     public Rigidbody2D pawn;
+    public Weapon WeaponInUse;
 }

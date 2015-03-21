@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CrosshairController : MonoBehaviour {
+public class WarpToMousePosController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

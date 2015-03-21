@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RaycastShootWeapon : MonoBehaviour {
+public class RaycastShootWeapon : Weapon {
 
     public float angle;
-    public float rateOfFire;
-    public bool tryShotLastFrame;
-    private float nextShoot = 0;
-    public LayerMask layerMask;
+    public LayerMask collisionLayer;
+    public LayerMask damageLayer;
 
     public float spreadAngle = 1;
     public int numBullets = 1;
+
+    public float rayLimit = Mathf.Infinity;
     
     float anglePerBullet;
     Quaternion quatSpreadAngleFrom;
@@ -30,34 +30,21 @@ public class RaycastShootWeapon : MonoBehaviour {
 	}
 
     Vector3 tmp = new Vector3();
-    void Shot(Vector2 dir)
+    override protected void Shot(Vector2 dir)
     {
         RaycastHit2D hit;
         for (int i = 0; i < numBullets; i++)
         {
 			Quaternion angle = Quaternion.Lerp(quatSpreadAngleFrom, quatSpreadAngleTo, 1f/((float)numBullets) * ((float)i));
             tmp = dir;
-            Debug.Log(angle.eulerAngles);
             tmp = angle * tmp;
 			Debug.DrawRay(this.transform.position, tmp, Color.green, 5);
-            hit = Physics2D.Raycast(this.transform.position, tmp, Mathf.Infinity, layerMask);
-            if (hit != null && hit.collider != null && hit.collider.gameObject.tag == "Enemy")
+            hit = Physics2D.Raycast(this.transform.position, tmp, rayLimit, collisionLayer);
+            if (hit != null && hit.collider != null && Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer) )
             {
                 Debug.Log(Time.time + ": hit enemy!");
                 hit.collider.gameObject.GetComponent<Health>().currentHealth--;
             }
         }
     }
-
-	public void TryShot(Vector2 dir)
-    {
-		if( Time.time > nextShoot )
-		{
-			nextShoot = Time.time + rateOfFire;
-			Shot(dir);
-			tryShotLastFrame = false;
-		}
-
-    }
-
 }

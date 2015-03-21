@@ -27,6 +27,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
   - 58: {fileID: 5800000}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -44,8 +45,8 @@ GameObject:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: Crossbow
-  m_TagString: Crossbow
+  m_Name: Shotgun
+  m_TagString: Shotgun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,8 +61,8 @@ GameObject:
   - 4: {fileID: 400006}
   - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: Shotgun
-  m_TagString: Shotgun
+  m_Name: Crossbow
+  m_TagString: Crossbow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,8 +90,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
-  - {fileID: 400006}
   - {fileID: 400004}
+  - {fileID: 400006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400004
@@ -104,7 +105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &400006
 Transform:
   m_ObjectHideFlags: 1
@@ -112,11 +113,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.42044425, y: -.503734648, z: -.0703125}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!50 &5000000
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -162,13 +163,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e0c585a18691f49884f0db0c9f0e2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 38176fd88b15efb47b86725205000ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rateOfFire: .200000003
-  projectile: {fileID: 100000, guid: 9b8f9a6a5b38ad54dbb72349a6c618b1, type: 2}
   tryShotLastFrame: 0
-  projectileSpeed: 30
+  angle: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 3072
+  spreadAngle: 90
+  numBullets: 5
+  rayLimit: Infinity
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,15 +183,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 100006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38176fd88b15efb47b86725205000ec6, type: 3}
+  m_Script: {fileID: 11500000, guid: 14e0c585a18691f49884f0db0c9f0e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 0
   rateOfFire: .200000003
   tryShotLastFrame: 0
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
+  projectile: {fileID: 100000, guid: 9b8f9a6a5b38ad54dbb72349a6c618b1, type: 2}
+  projectileSpeed: 30
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e3e6806fd1d334798bf9eeae980251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementController: {fileID: 0}
+  LookAtController: {fileID: 0}
+  LookAtMouseCtrl: {fileID: 0}
+  pawn: {fileID: 0}
+  WeaponInUse: {fileID: 11400002}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

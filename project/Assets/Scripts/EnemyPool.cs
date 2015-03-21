@@ -27,7 +27,6 @@ public class EnemyPool : MonoBehaviour {
 
 		foreach( Transform t in initialSpawns )
         {
-            Debug.Log("asd");
             SpawnEnemy(t.transform.position);
         }
 	}

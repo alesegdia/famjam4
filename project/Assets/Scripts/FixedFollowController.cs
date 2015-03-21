@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FixedFollow : MonoBehaviour {
+public class FixedFollowController : MonoBehaviour {
 
     public GameObject toFollow;
     Vector3 pos = new Vector3(0, 0);
