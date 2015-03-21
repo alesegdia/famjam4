@@ -22,6 +22,5 @@ public class FollowController : MonoBehaviour {
         if (Mathf.Abs(vel.x) > maxSpeed) vel.x = maxSpeed * Mathf.Sign(vel.x);
         if (Mathf.Abs(vel.y) > maxSpeed) vel.y = maxSpeed * Mathf.Sign(vel.y);
         pawn.velocity = vel;
-        Debug.Log(vel);
 	}
 }

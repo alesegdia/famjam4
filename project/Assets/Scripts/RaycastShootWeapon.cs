@@ -13,10 +13,14 @@ public class RaycastShootWeapon : Weapon {
     public float rayLimit = Mathf.Infinity;
 
     public GameObject spark;
+
+    public int damage = 1;
     
     float anglePerBullet;
     Quaternion quatSpreadAngleFrom;
     Quaternion quatSpreadAngleTo;
+
+    public float knockbackForce = 500f;
 
 	// Use this for initialization
 	void Start () {
@@ -47,9 +51,9 @@ public class RaycastShootWeapon : Weapon {
                 GameObject.Instantiate(spark, hit.centroid, Quaternion.identity);
                 if (Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer))
                 {
-                    hit.collider.gameObject.GetComponent<Health>().currentHealth--;
+                    hit.collider.gameObject.GetComponent<Health>().currentHealth -= damage;
                     Rigidbody2D body = hit.collider.gameObject.GetComponent<Rigidbody2D>();
-                    body.AddForce(-hit.normal * 500);
+                    body.AddForce(-hit.normal * knockbackForce);
                 }
             }
         }
