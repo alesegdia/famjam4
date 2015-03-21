@@ -9,7 +9,8 @@ public class ConversationManager : MonoBehaviour
 
     public delegate void ConversationLineCallback( );
 
-    public event ConversationCallback ConvCallback;
+    public event ConversationCallback ConvFinishedCallback;
+    public event ConversationCallback ConvStartedCallback;
 
     private ConversationCallback callback;
 
@@ -29,6 +30,7 @@ public class ConversationManager : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
+        currentLineState = ConversationLineState.NONE;
 	}
 	
 	// Update is called once per frame
@@ -41,21 +43,34 @@ public class ConversationManager : MonoBehaviour
                 currentLineState = ConversationLineState.WAITING_FOR_CLICK;
                 break;
             case ConversationLineState.WAITING_FOR_CLICK:
-                if( Input.GetMouseButton( 0 ) )
+                if( Input.GetMouseButtonDown( 0 ) )
                 {
                     if (!string.IsNullOrEmpty(currentConversation.lines[currentIndex].SendMessage))
                     {
                         MessageACK ack;
                         ack.received = false;
                         ack.callback = ConversationLineEvent_Completed;
-                        BroadcastMessage(string.Format("{0}_{1}", currentConversation.ConversationName, currentConversation.lines[currentIndex].SendMessage), ack);
-                        if (ack.received)
+                        string methodName = string.Format("{0}_{1}", currentConversation.name, currentConversation.lines[currentIndex].SendMessage);
+                        BroadcastMessage( methodName, ack );
+                        if ( ack.received )
                         {
-                            currentLineState = ConversationLineState.WAITING_FOR_HANDLER_TO_COMPLETE;
+                            // little fix for instan events
+                            if( currentLineState == ConversationLineState.WAITING_FOR_CLICK )
+                            {
+                                currentLineState = ConversationLineState.WAITING_FOR_HANDLER_TO_COMPLETE;
+                            }
                         }
                         else
                         {
                             Debug.Log("No entity received the message jump go to the next line");
+                            if (nextLine())
+                            {
+                                currentLineState = ConversationLineState.SHOWING;
+                            }
+                            else
+                            {
+                                EndConversation();
+                            }
                         }
                     }
                     else
@@ -91,23 +106,30 @@ public class ConversationManager : MonoBehaviour
         // clean the previous text
         UI.SetText( "", Color.white );
         this.callback = callback;
+        ConvFinishedCallback += this.callback;
         currentConversation = conv;
         currentIndex = 0;
         currentLineState = ConversationLineState.SHOWING;
         // show the ui
         UI.ShowConversationUI( true );
+
+        if (ConvStartedCallback != null)
+        {
+            ConvStartedCallback(conv.name);
+        }
     }
 
     private void EndConversation()
     {
-        if ( ConvCallback != null )
+        if ( ConvFinishedCallback != null )
         {
-            ConvCallback( currentConversation.ConversationName );
+            ConvFinishedCallback( currentConversation.name );
         }
-        ConvCallback -= callback;
+        ConvFinishedCallback -= callback;
         currentLineState = ConversationLineState.NONE;
         currentIndex = 0;
         currentConversation = null;
+        UI.ShowConversationUI( false );
     }
 
     private void ConversationLineEvent_Completed()

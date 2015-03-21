@@ -9,7 +9,13 @@ public class LogicManager : MonoBehaviour {
         CONVERSATION,
     };
 
+    [SerializeField]
     private LogicStates currentState;
+
+    public LogicStates CurrentState
+    {
+        get { return currentState; }
+    }
 
     private static LogicManager instance;
 
@@ -54,11 +60,41 @@ public class LogicManager : MonoBehaviour {
         }
 
         conversationMgr = FindObjectOfType<ConversationManager>();
-        if( !conversationMgr )
+        if ( conversationMgr )
         {
-            Debug.LogWarning( "No conversation manager in the scene. Maybe we are in the action now?" );
+            conversationMgr.ConvFinishedCallback += conversationMgr_ConversationEndedCallback;
+            conversationMgr.ConvStartedCallback += conversationMgr_ConvStartedCallback;
+        }
+        else
+        {
+            Debug.LogWarning("No conversation manager in the scene. Maybe we are in the action now?");
         }
 	}
+
+    void conversationMgr_ConvStartedCallback( string convName )
+    {
+        SetState( LogicStates.CONVERSATION );
+    }
+
+    void conversationMgr_ConversationEndedCallback(string convName)
+    {
+        if( currentState == LogicStates.CONVERSATION )
+        {
+            // [HACK] do a little wait before returning to the playing part
+            StartCoroutine( waitAndSetState( 1, LogicStates.PLAYING_CONVERSATION_PART )  );
+            //SetState( LogicStates.PLAYING_CONVERSATION_PART );
+        }
+    }
+
+    IEnumerator waitAndSetState( int frames, LogicStates newState)
+    {
+        while( frames > 0 )
+        {
+            yield return 0;
+            --frames;
+        }
+        SetState( newState );
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -72,10 +108,10 @@ public class LogicManager : MonoBehaviour {
         switch( currentState )
         {
             case LogicStates.PLAYING_CONVERSATION_PART:
-                // enable some controls
+                player.EnableAllControllers( true );
                 break;
             case LogicStates.CONVERSATION:
-                player.DisableAllControllers();
+                player.EnableAllControllers( false );
                 // show the UI
                 break;
         }

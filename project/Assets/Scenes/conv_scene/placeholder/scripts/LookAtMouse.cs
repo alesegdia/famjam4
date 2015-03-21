@@ -19,7 +19,7 @@ public class LookAtMouse : MonoBehaviour {
 	void Update () {
         Vector3 mouse = Camera.main.ScreenToWorldPoint( Input.mousePosition );
         mouse.z = pawn.position.z;
-        Debug.Log( mouse );
+        //Debug.Log( mouse );
         if( ( mouse - pawn.position ).sqrMagnitude > 0.01f )
         {
             Vector3 delta = mouse - pawn.position;

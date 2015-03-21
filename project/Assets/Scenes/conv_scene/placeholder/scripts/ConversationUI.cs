@@ -10,11 +10,21 @@ public class ConversationUI : MonoBehaviour
 
     public Texture conv_box;
 
+    public GUISkin skin;
+
     [SerializeField]
     private bool visible = true;
 
+    [SerializeField]
+    private string text;
+    private Color color;
+
     void Start()
     {
+        if( skin == null )
+        {
+            skin = new GUISkin();
+        }
     }
 
     void OnGUI()
@@ -26,7 +36,8 @@ public class ConversationUI : MonoBehaviour
             //Rect screenRect = ConversationBoxVPArea;
             //GUI.DrawTexture(screenRect, conv_box, ScaleMode.StretchToFill); 
             GUI.Box( screenRect, "" );
-
+            screenRect = new Rect(Screen.width * ConversationLabelVPArea.x, Screen.height * (1 - ConversationLabelVPArea.y - ConversationLabelVPArea.height), Screen.width * ConversationLabelVPArea.width, Screen.height * ConversationLabelVPArea.height);
+            GUI.Label( screenRect, text, skin.label );
         }
     }
 
@@ -36,6 +47,10 @@ public class ConversationUI : MonoBehaviour
     }
 
     public void SetText( string text, Color color )
-    { 
+    {
+        skin.label.normal.textColor = color;
+        skin.label.hover.textColor = color;
+        skin.label.active.textColor = color;
+        this.text = text;
     }
 }

@@ -11,11 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
   m_Name: ConversationTest
   m_EditorClassIdentifier: 
-  ConversationName: ConversationTest1
   lines:
   - line: This is the first line motherfucker
     color: {r: 1, g: 0, b: 0, a: 1}
     sendMessage: 
-  - line: That's the second line
+  - line: And this is the second line
     color: {r: 0, g: 1, b: .462069035, a: 1}
-    sendMessage: 
+    sendMessage: LookPlayer
+  - line: Ya scurvy scum!
+    color: {r: 0, g: .751724005, b: 1, a: 1}
+    sendMessage: TurnBack

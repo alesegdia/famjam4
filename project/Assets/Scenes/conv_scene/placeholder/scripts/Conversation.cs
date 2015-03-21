@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Conversation : ScriptableObject 
 {
-    public string ConversationName;
+    //public string ConversationName;
     public ConversationLine[] lines;
 }
 

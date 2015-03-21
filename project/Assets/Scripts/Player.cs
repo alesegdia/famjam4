@@ -8,10 +8,13 @@ public class Player : MonoBehaviour {
     public Rigidbody2D pawn;
     public Weapon WeaponInUse;
 
-    public void DisableAllControllers()
+    public void EnableAllControllers( bool enabled )
     {
-        MovementController.enabled = false;
-        LookAtController.enabled = false;
-        LookAtMouseCtrl.enabled = false;
+        if ( MovementController )
+            MovementController.enabled = enabled;
+        if( LookAtController )
+            LookAtController.enabled = enabled;
+        if( LookAtMouseCtrl )
+            LookAtMouseCtrl.enabled = enabled;
     }
 }

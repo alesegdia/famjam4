@@ -10,7 +10,7 @@ public class ConversationController : MonoBehaviour
 
     private bool Interact
     {
-        get { return Input.GetMouseButton(0); }
+        get { return  LogicManager.Instance.CurrentState == LogicManager.LogicStates.PLAYING_CONVERSATION_PART && Input.GetMouseButtonDown(0); }
     }
 
     void Start()
