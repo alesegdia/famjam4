@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
+  m_Name: PulpFictionConversation
+  m_EditorClassIdentifier: 
+  lines:
+  - line: Okay now, tell me about the hash bars? Because we aren't in one don't we
+    color: {r: .647058845, g: .522109568, b: 0, a: 1}
+    sendMessage: 
+  - line: Of course not, we are not in the motherfucking Amsterdam. What so you want
+      to know?
+    color: {r: 1, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: Well, hash is legal there, right?
+    color: {r: .643137276, g: .517647088, b: 0, a: 1}
+    sendMessage: 
+  - line: Yeah, it's legal, but is ain't a hundred percent legal. I mean you can't
+      walk into a restaurant, roll a joint, and start puffin' away You're only supposed
+      to smoke in your homeor certain designated places.
+    color: {r: .996078432, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: Although I heard in some cities like Seville you can do it...
+    color: {r: .996078432, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: Those are hash bars?
+    color: {r: .643137276, g: .517647088, b: 0, a: 1}
+    sendMessage: 
+  - line: 'Yeah, it breaks down like this: it''s legal to buy it, it''s legal to own
+      it and, if you''re the proprietor of a hash bar, it''s legal to sell it.'
+    color: {r: .992156863, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: "It's legal to carry it, which doesn't really matter 'cause \u2013 get a
+      load of this \u2013 if the cops stop you, it's illegal for this to search you."
+    color: {r: .988235295, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: Searching you is a right that the cops in Amsterdam don't have.
+    color: {r: .988235295, g: 0, b: 0, a: 1}
+    sendMessage: 
+  - line: That did it, man. I'm fuckin' goin', that's all there is to it.
+    color: {r: .639215708, g: .513725519, b: 0, a: 1}
+    sendMessage: 

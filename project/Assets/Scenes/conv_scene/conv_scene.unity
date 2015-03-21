@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &51526291
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &78509534
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1001 &117637792
 Prefab:
   m_ObjectHideFlags: 0
@@ -744,6 +747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &247936518
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +794,7 @@ GameObject:
   - 58: {fileID: 248060249}
   - 114: {fileID: 248060251}
   m_Layer: 8
-  m_Name: npc
+  m_Name: MrOrange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -842,7 +846,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d6cd0af3897a43245b3ea8881a8b320d, type: 3}
-  m_Color: {r: .944827437, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: .351724148, b: 0, a: 1}
 --- !u!114 &248060251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,6 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &257979616
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &265741017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1061,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: .25
-  conv_box: {fileID: 0}
+  conv_box: {fileID: 2800000, guid: acd6bb30cbb46b546a2914062e2081ee, type: 3}
   skin: {fileID: 11400000, guid: 872ee58173b2c2a49b3787a06da5433f, type: 2}
   visible: 0
   text: jander clander jander clander jander clander jander clander jander clander
@@ -1222,6 +1228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &382423236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1001 &544127044
 Prefab:
   m_ObjectHideFlags: 0
@@ -1588,7 +1596,7 @@ GameObject:
   - 58: {fileID: 570778376}
   - 114: {fileID: 570778378}
   m_Layer: 8
-  m_Name: npc
+  m_Name: MrBrown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1640,7 +1648,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d6cd0af3897a43245b3ea8881a8b320d, type: 3}
-  m_Color: {r: 0, g: 1, b: .255172253, a: 1}
+  m_Color: {r: .549019635, g: .329411775, b: 0, a: 1}
 --- !u!114 &570778378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1653,7 +1661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa66610189b895409d5fdc5373124af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conv: {fileID: 11400000, guid: 619073abc95fea9489d10a075275f8fc, type: 2}
+  Conv: {fileID: 11400000, guid: 5c5a01c569f36884e8e61203b486027d, type: 2}
+  LookPlayer: 0
 --- !u!1001 &585736089
 Prefab:
   m_ObjectHideFlags: 0
@@ -1956,6 +1965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &792915386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,6 +2044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &811725569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,6 +2193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &845213963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,6 +2272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &861376948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,6 +2351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &882607048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,6 +2514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &912136713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,6 +2662,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 103906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Name
+      value: MrBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Color.g
+      value: .586206913
+      objectReference: {fileID: 0}
+    - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
   m_RootGameObject: {fileID: 1355689752}
@@ -2778,6 +2809,18 @@ Prefab:
     - target: {fileID: 403906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 103906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Name
+      value: MrOrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Color.g
+      value: .351724148
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
@@ -2964,6 +3007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1001 &1041444776
 Prefab:
   m_ObjectHideFlags: 0
@@ -3130,6 +3174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1001 &1107568107
 Prefab:
   m_ObjectHideFlags: 0
@@ -3286,6 +3331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1173624096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,6 +3410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1188532896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +3489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1195790692
 GameObject:
   m_ObjectHideFlags: 0
@@ -3520,6 +3568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1197178181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,6 +3647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1001 &1211749369
 Prefab:
   m_ObjectHideFlags: 0
@@ -3720,6 +3770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1001 &1257814200
 Prefab:
   m_ObjectHideFlags: 0
@@ -3762,19 +3813,27 @@ Prefab:
     - target: {fileID: 11424620, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: Conv
       value: 
-      objectReference: {fileID: 11400000, guid: 619073abc95fea9489d10a075275f8fc,
+      objectReference: {fileID: 11400000, guid: 5c5a01c569f36884e8e61203b486027d,
         type: 2}
     - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .549019635
       objectReference: {fileID: 0}
     - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_Color.g
-      value: 1
+      value: .329411775
       objectReference: {fileID: 0}
     - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_Color.b
-      value: .255172253
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Name
+      value: MrBrown
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424620, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: LookPlayer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
@@ -3976,7 +4035,7 @@ GameObject:
   - 58: {fileID: 1355689754}
   - 114: {fileID: 1355689756}
   m_Layer: 8
-  m_Name: npc
+  m_Name: MrBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4028,7 +4087,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d6cd0af3897a43245b3ea8881a8b320d, type: 3}
-  m_Color: {r: .944827437, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: .586206913, b: 1, a: 1}
 --- !u!114 &1355689756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4042,6 +4101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1360361120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,6 +4161,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 882607049}
+  - {fileID: 1717247163}
   m_Father: {fileID: 2133274177}
   m_RootOrder: 0
 --- !u!114 &1404337119
@@ -4325,6 +4386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1511295747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4353,6 +4415,7 @@ Transform:
   - {fileID: 982354658}
   - {fileID: 1962886032}
   - {fileID: 744292289}
+  - {fileID: 1631354443}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!1 &1517827812
@@ -4534,6 +4597,49 @@ Prefab:
   m_RootGameObject: {fileID: 105448273}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1631354442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1631354443}
+  - 60: {fileID: 1631354444}
+  m_Layer: 0
+  m_Name: tequila_bar_bounds_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1631354443
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1631354442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.51999998, y: -2.07999992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1511295748}
+  m_RootOrder: 3
+--- !u!60 &1631354444
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1631354442}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .569633007, y: .282384396}
+      - {x: .565166473, y: -.0550470352}
+      - {x: .00827741623, y: -.0670251846}
+      - {x: .0142383575, y: .283934832}
 --- !u!1 &1656157196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,6 +4680,46 @@ EdgeCollider2D:
   m_Points:
   - {x: -.5, y: 0}
   - {x: .5, y: 0}
+--- !u!1 &1717247162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1717247163}
+  - 114: {fileID: 1717247164}
+  m_Layer: 0
+  m_Name: ReservoirDogs_Handlers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1717247163
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1717247162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1404337118}
+  m_RootOrder: 1
+--- !u!114 &1717247164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1717247162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bad423a646037548839e78ecba548f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MrBrown: {fileID: 570778378}
 --- !u!1 &1731431066
 GameObject:
   m_ObjectHideFlags: 0
@@ -4751,6 +4897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1887844492
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,6 +4976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1913009164
 GameObject:
   m_ObjectHideFlags: 0
@@ -4907,6 +5055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &1917375921
 GameObject:
   m_ObjectHideFlags: 0
@@ -4919,7 +5068,7 @@ GameObject:
   - 58: {fileID: 1917375923}
   - 114: {fileID: 1917375925}
   m_Layer: 8
-  m_Name: npc
+  m_Name: MrWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4971,7 +5120,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d6cd0af3897a43245b3ea8881a8b320d, type: 3}
-  m_Color: {r: .944827437, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1917375925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4985,6 +5134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1001 &1924267347
 Prefab:
   m_ObjectHideFlags: 0
@@ -5363,6 +5513,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 103906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Name
+      value: MrWhite
+      objectReference: {fileID: 0}
+    - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
   m_RootGameObject: {fileID: 1917375921}
@@ -5510,6 +5672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conv: {fileID: 0}
+  LookPlayer: 1
 --- !u!1 &2133274175
 GameObject:
   m_ObjectHideFlags: 0
