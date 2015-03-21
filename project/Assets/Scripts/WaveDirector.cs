@@ -33,6 +33,9 @@ public class WaveDirector : MonoBehaviour {
         public void ActivateAllSpawners() { SetActiveAllSpawners(true); }
 	}
 
+	// espera al principio...
+    public KeyFrame prelude;
+
 	// nube y se cambia el sprite a vampiros
     public KeyFrame transformation;
 
@@ -56,6 +59,8 @@ public class WaveDirector : MonoBehaviour {
         baseTime = Time.time;
         isPlaying = false;
         Play();
+        secondWave.DeactivateAllSpawners();
+        thirdWave.DeactivateAllSpawners();
 	}
 
 	public void Play()
@@ -96,24 +101,29 @@ public class WaveDirector : MonoBehaviour {
                 Debug.Log("look! these rednecks are turning into vampires!");
 				HumanToVampireTransformation();
 			}
+			else if( prelude.Timeline(baseTime) )
+            {
+                Debug.Log("We're here drinking hahaha wowowo");
+            }
         }
 	}
 
     private void HumanToVampireTransformation()
     {
         Debug.Log("HumanToVampireTransformation");
-		foreach( EnemyAgent e in GameObject.FindObjectsOfType<EnemyAgent>() )
+		EnemyAgent.vampire = true;
+        EnemyPool pool = GameObject.FindObjectOfType<EnemyPool>();
+		foreach( GameObject go in GameObject.FindGameObjectsWithTag("MaskedVampire") )
         {
-            e.vampire = true;
+            Vector3 pos = go.transform.position;
+            pool.SpawnEnemy(pos);
+            Destroy(go);
         }
     }
 
     private void TurnEnemiesAggresive()
     {
         Debug.Log("TurnEnemiesAggresive");
-		foreach( EnemyAgent e in GameObject.FindObjectsOfType<EnemyAgent>() )
-        {
-            e.aggresive = true;
-        }
+        EnemyAgent.aggresive = true;
     }
 }

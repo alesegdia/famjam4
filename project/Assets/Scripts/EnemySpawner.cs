@@ -5,7 +5,7 @@ public class EnemySpawner : MonoBehaviour {
 
 	EnemyPool enemyPool;
     public float rateOfSpawn = 1f;
-    float nextSpawn = 0;
+    float nextSpawn = 0f;
 
 	// Use this for initialization
 	void Start () {
