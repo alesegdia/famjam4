@@ -32,6 +32,7 @@ GameObject:
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400012}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
@@ -58,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.70286202, y: -2.05932379, z: -1}
+  m_LocalPosition: {x: -1.91999996, y: -1.63999999, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -101,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f16a0382b7848141a9b3adcc8def8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTag: Player
+  target: {fileID: 0}
   pawn: {fileID: 5000000}
   maxSpeed: 5
   followForce: .300000012
@@ -178,6 +179,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b2198a8874b4944906b726bd3b77f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objective: {fileID: 0}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a921d1795a1f14d917256f0af5a4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aggresive: 0
+  followController: {fileID: 0}
+  lookAtController: {fileID: 0}
+  alwaysAttack: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
