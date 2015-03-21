@@ -15,7 +15,7 @@ public class PlayerShootKeyboardController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if( Input.GetMouseButton(0) )
+		if( Input.GetMouseButtonDown(0) )
         {
             weaponInUse.TryShot(crosshair.transform.position - this.transform.position);
         }

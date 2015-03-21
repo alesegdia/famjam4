@@ -42,7 +42,6 @@ public class RaycastShootWeapon : Weapon {
             hit = Physics2D.Raycast(this.transform.position, tmp, rayLimit, collisionLayer);
             if (hit != null && hit.collider != null && Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer) )
             {
-                Debug.Log(Time.time + ": hit enemy!");
                 hit.collider.gameObject.GetComponent<Health>().currentHealth--;
             }
         }

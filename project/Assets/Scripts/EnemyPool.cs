@@ -36,14 +36,25 @@ public class EnemyPool : MonoBehaviour {
         e.isDead = false;
         e.gameObject.SetActive(false);
         pool.Enqueue(e.gameObject);
+        Debug.Log("DEAD! " + pool.Count);
 	}
 
-    GameObject SpawnEnemy( Vector3 position )
+    public GameObject SpawnEnemy( Vector3 position )
     {
-        GameObject go = pool.Dequeue();
-        go.SetActive(true);
-        go.transform.position = position;
-        return go;
+        if (pool.Count > 0)
+        {
+            GameObject go = pool.Dequeue();
+            go.SetActive(true);
+            Health h = go.GetComponent<Health>();
+            h.currentHealth = h.maxHealth;
+            go.transform.position = position;
+			Debug.Log("SPAWN! " + pool.Count);
+            return go;
+        }
+		else
+        {
+            return null;
+        }
     }
 
 	// Update is called once per frame
