@@ -19,12 +19,15 @@ public class ConversationUI : MonoBehaviour
     private string text;
     private Color color;
 
+    private GUIStyle style;
+
     void Start()
     {
         if( skin == null )
         {
             skin = new GUISkin();
         }
+        style = new GUIStyle(skin.label);
     }
 
     void OnGUI()
@@ -37,7 +40,7 @@ public class ConversationUI : MonoBehaviour
             //GUI.DrawTexture(screenRect, conv_box, ScaleMode.StretchToFill); 
             GUI.Box( screenRect, "", skin.box );
             screenRect = new Rect(Screen.width * ConversationLabelVPArea.x, Screen.height * (1 - ConversationLabelVPArea.y - ConversationLabelVPArea.height), Screen.width * ConversationLabelVPArea.width, Screen.height * ConversationLabelVPArea.height);
-            GUI.Label( screenRect, text, skin.label );
+            GUI.Label(screenRect, text, style);
         }
     }
 
@@ -48,9 +51,9 @@ public class ConversationUI : MonoBehaviour
 
     public void SetText( string text, Color color )
     {
-        skin.label.normal.textColor = color;
-        skin.label.hover.textColor = color;
-        skin.label.active.textColor = color;
+        style.normal.textColor = color;
+        style.hover.textColor = color;
+        style.active.textColor = color;
         this.text = text;
     }
 }
