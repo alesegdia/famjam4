@@ -26,6 +26,13 @@ public class LogicManager : MonoBehaviour {
         set { player = value; }
     }
 
+    private ConversationManager conversationMgr;
+
+    public ConversationManager ConversationMgr
+    {
+        get { return conversationMgr; }
+    }
+
     void Awake()
     {
         if (!instance)
@@ -45,6 +52,12 @@ public class LogicManager : MonoBehaviour {
         {
             Debug.LogError( "No player in the scene" );
         }
+
+        conversationMgr = FindObjectOfType<ConversationManager>();
+        if( !conversationMgr )
+        {
+            Debug.LogWarning( "No conversation manager in the scene. Maybe we are in the action now?" );
+        }
 	}
 	
 	// Update is called once per frame
@@ -62,6 +75,7 @@ public class LogicManager : MonoBehaviour {
                 // enable some controls
                 break;
             case LogicStates.CONVERSATION:
+                player.DisableAllControllers();
                 // show the UI
                 break;
         }

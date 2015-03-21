@@ -11,6 +11,8 @@ public class RaycastShootWeapon : Weapon {
     public int numBullets = 1;
 
     public float rayLimit = Mathf.Infinity;
+
+    public GameObject spark;
     
     float anglePerBullet;
     Quaternion quatSpreadAngleFrom;
@@ -40,9 +42,13 @@ public class RaycastShootWeapon : Weapon {
             tmp = angle * tmp;
 			Debug.DrawRay(this.transform.position, tmp, Color.green, 5);
             hit = Physics2D.Raycast(this.transform.position, tmp, rayLimit, collisionLayer);
-            if (hit != null && hit.collider != null && Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer) )
+            if (hit != null && hit.collider != null)
             {
-                hit.collider.gameObject.GetComponent<Health>().currentHealth--;
+                GameObject.Instantiate(spark, hit.centroid, Quaternion.identity);
+                if (Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer))
+                {
+                    hit.collider.gameObject.GetComponent<Health>().currentHealth--;
+                }
             }
         }
     }

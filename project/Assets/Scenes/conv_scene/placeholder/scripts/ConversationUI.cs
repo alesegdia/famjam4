@@ -6,6 +6,8 @@ public class ConversationUI : MonoBehaviour
 {
     public Rect ConversationBoxVPArea;
 
+    public Rect ConversationLabelVPArea;
+
     public Texture conv_box;
 
     [SerializeField]
@@ -22,13 +24,18 @@ public class ConversationUI : MonoBehaviour
             // pass from vp coords to screen
             Rect screenRect = new Rect(Screen.width * ConversationBoxVPArea.x, Screen.height * (1 - ConversationBoxVPArea.y - ConversationBoxVPArea.height ), Screen.width * ConversationBoxVPArea.width, Screen.height * ConversationBoxVPArea.height);
             //Rect screenRect = ConversationBoxVPArea;
-            //GUI.DrawTexture(screenRect, conv_box, ScaleMode.StretchToFill);  
-            GUI.Box( screenRect, "jar" );
+            //GUI.DrawTexture(screenRect, conv_box, ScaleMode.StretchToFill); 
+            GUI.Box( screenRect, "" );
+
         }
     }
 
-    public void ShowconversationUI( bool visible )
+    public void ShowConversationUI( bool visible )
     {
         this.visible = visible;
+    }
+
+    public void SetText( string text, Color color )
+    { 
     }
 }
