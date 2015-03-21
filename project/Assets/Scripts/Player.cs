@@ -7,4 +7,11 @@ public class Player : MonoBehaviour {
     public LookAtMouse LookAtMouseCtrl;
     public Rigidbody2D pawn;
     public Weapon WeaponInUse;
+
+    public void DisableAllControllers()
+    {
+        MovementController.enabled = false;
+        LookAtController.enabled = false;
+        LookAtMouseCtrl.enabled = false;
+    }
 }
