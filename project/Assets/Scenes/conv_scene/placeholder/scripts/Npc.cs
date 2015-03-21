@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Npc : MonoBehaviour 
 {
+    public Conversation Conv;
+
     public void Interact()
     {
         Player player = LogicManager.Instance.Player;
