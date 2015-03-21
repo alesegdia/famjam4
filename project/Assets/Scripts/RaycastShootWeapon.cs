@@ -48,6 +48,8 @@ public class RaycastShootWeapon : Weapon {
                 if (Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer))
                 {
                     hit.collider.gameObject.GetComponent<Health>().currentHealth--;
+                    Rigidbody2D body = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                    body.AddForce(-hit.normal * 500);
                 }
             }
         }
