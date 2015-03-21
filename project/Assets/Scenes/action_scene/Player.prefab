@@ -241,7 +241,8 @@ MonoBehaviour:
   LookAtController: {fileID: 0}
   LookAtMouseCtrl: {fileID: 0}
   pawn: {fileID: 0}
-  WeaponInUse: {fileID: 11400008}
+  WeaponInUse: {fileID: 11400002}
+  ConvController: {fileID: 0}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

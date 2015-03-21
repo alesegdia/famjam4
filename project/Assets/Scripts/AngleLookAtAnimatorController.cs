@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AngleSpritesheetController : MonoBehaviour {
+public class AngleLookAtAnimatorController : MonoBehaviour {
 
     public Animator animator;
     public GameObject pawn;
