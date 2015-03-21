@@ -8,19 +8,23 @@ public class EnemyPool : MonoBehaviour {
     public int maxElements = 30;
     Queue<GameObject> pool = new Queue<GameObject>();
     public List<Transform> initialSpawns;
+    GameObject player;
 
 	// Use this for initialization
 	void Start () {
 
+        player = GameObject.FindGameObjectWithTag("Player");
 		for( int i = 0; i < maxElements; i++ )
         {
             GameObject go = (GameObject)GameObject.Instantiate(((Object)prefab));
             FollowController fc = go.GetComponent<FollowController>();
-            fc.targetTag = "Player";
+            fc.target = player;
             LookAtController lac = go.GetComponent<LookAtController>();
-            lac.target = GameObject.FindGameObjectWithTag("Player");
+            lac.target = player;
             Enemy enemy = go.GetComponent<Enemy>();
             enemy.pool = this;
+            AlwaysAttack aa = go.GetComponent<AlwaysAttack>();
+            aa.objective = player;
             go.SetActive(false);
             pool.Enqueue(go);
         }
