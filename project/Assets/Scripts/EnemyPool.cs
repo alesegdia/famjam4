@@ -44,7 +44,6 @@ public class EnemyPool : MonoBehaviour {
 
             go.SetActive(false);
             pool.Enqueue(go);
-            Debug.Log(go.activeSelf);
         }
 
 	}
