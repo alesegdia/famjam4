@@ -11,6 +11,16 @@ public class Player : MonoBehaviour {
     public ConversationController ConvController;
     public Animator UpperBodyAnimator;
 
+    public bool canWin = false;
+    public GameObject winObject = null;
+    public Health health;
+
+	public void Start()
+    {
+        health = GetComponent<Health>();
+        pawn = GetComponent<Rigidbody2D>();
+    }
+
     public void EnableAllMovementControllers( bool enabled )
     {
         if ( MovementController )
@@ -31,6 +41,25 @@ public class Player : MonoBehaviour {
             LookAtMouseCtrl.enabled = enabled;
         if (ConvController)
             ConvController.enabled = enabled;
+    }
+
+	void Update()
+    {
+        pawn.angularDrag = 0;
+        pawn.angularVelocity = 0;
+		if(health.currentHealth < 0)
+        {
+            Application.LoadLevel("action_lose");
+            Debug.Log("LOSE");
+        }
+		if(winObject)
+        {
+			if(canWin && Vector2.Distance(this.transform.position, winObject.transform.position) < 2)
+            {
+				Application.LoadLevel("Scenes/action_win");
+                Debug.Log("WIN");
+			}
+        }
     }
 
     public Vector3 GetLookDirection()

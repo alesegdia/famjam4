@@ -154,7 +154,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -243,6 +243,10 @@ MonoBehaviour:
   pawn: {fileID: 0}
   WeaponInUse: {fileID: 11400002}
   ConvController: {fileID: 0}
+  UpperBodyAnimator: {fileID: 0}
+  canWin: 0
+  winObject: {fileID: 0}
+  health: {fileID: 0}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -277,8 +281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c46279b9ef13a4ab2dee6429e660fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
-  currentHealth: 20
+  maxHealth: 100
+  currentHealth: 100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
