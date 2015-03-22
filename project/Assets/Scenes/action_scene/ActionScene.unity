@@ -514,6 +514,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 89601706}
   - 212: {fileID: 89601705}
+  - 61: {fileID: 89601707}
   m_Layer: 0
   m_Name: redneck1_left
   m_TagString: MaskedVampire
@@ -556,6 +557,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 27
+--- !u!61 &89601707
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 89601704}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .409999996, y: .680000007}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &122698160
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +826,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 167102987}
   - 212: {fileID: 167102986}
+  - 61: {fileID: 167102988}
   m_Layer: 0
   m_Name: redneck2
   m_TagString: MaskedVampire
@@ -856,6 +869,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
+--- !u!61 &167102988
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 167102985}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .280000001, y: .649999976}
+  m_Center: {x: 0, y: 0}
 --- !u!1001 &187322694
 Prefab:
   m_ObjectHideFlags: 0
@@ -2188,6 +2212,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 493895023}
   - 212: {fileID: 493895022}
+  - 61: {fileID: 493895024}
   m_Layer: 0
   m_Name: redneck4
   m_TagString: MaskedVampire
@@ -2229,6 +2254,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 58
+--- !u!61 &493895024
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 493895021}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .430000007, y: .529999971}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &503797663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2380,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 514175885}
   - 212: {fileID: 514175884}
+  - 61: {fileID: 514175886}
   m_Layer: 0
   m_Name: redneck4
   m_TagString: MaskedVampire
@@ -2385,6 +2422,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 59
+--- !u!61 &514175886
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514175883}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .430000007, y: .529999971}
+  m_Center: {x: 0, y: 0}
 --- !u!1001 &520987317
 Prefab:
   m_ObjectHideFlags: 0
@@ -3717,8 +3765,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .349999994, y: .389999986}
-  m_Center: {x: 0, y: -.150000006}
+  m_Size: {x: .359991074, y: .499904037}
+  m_Center: {x: .0149867535, y: -.204952002}
 --- !u!212 &783973439
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3794,12 +3842,12 @@ PolygonCollider2D:
   m_Poly:
     m_Paths:
     - - {x: .00854086876, y: .936986804}
-      - {x: .451011658, y: .962703347}
-      - {x: .431231022, y: .624270797}
-      - {x: .169569731, y: .620436549}
-      - {x: .19943738, y: -1.29286802}
-      - {x: 3.04653335, y: -1.30730617}
-      - {x: 3.03919911, y: -1.54482698}
+      - {x: .404753447, y: .953451753}
+      - {x: .440482616, y: .744542241}
+      - {x: .169569731, y: .712952971}
+      - {x: .125424147, y: -1.29286802}
+      - {x: 2.98177123, y: -1.31655777}
+      - {x: 3.00219226, y: -1.54482698}
       - {x: -.0168910027, y: -1.5533185}
       - {x: -.0133976936, y: -.244600445}
 --- !u!1 &796308797
@@ -4067,11 +4115,11 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_Poly:
     m_Paths:
-    - - {x: -1.7234509, y: .614150763}
-      - {x: 1.31116772, y: .635367095}
+    - - {x: -1.80671573, y: 1.04897821}
+      - {x: 1.27416134, y: 1.05169129}
       - {x: 1.23647118, y: -1.73409867}
-      - {x: -.440555573, y: -1.74342024}
-      - {x: -.45274353, y: -1.02283263}
+      - {x: -.366542339, y: -1.71566534}
+      - {x: -.341723919, y: -.976574361}
       - {x: -1.75005174, y: -1.0076369}
 --- !u!1001 &906595931
 Prefab:
@@ -4661,6 +4709,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1028760175}
   - 212: {fileID: 1028760174}
+  - 61: {fileID: 1028760176}
   m_Layer: 0
   m_Name: redneck3
   m_TagString: MaskedVampire
@@ -4702,6 +4751,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 62
+--- !u!61 &1028760176
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028760173}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .349999994, y: .389999986}
+  m_Center: {x: 0, y: 0}
 --- !u!1001 &1049738497
 Prefab:
   m_ObjectHideFlags: 0
@@ -5072,6 +5132,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1121732570}
   - 212: {fileID: 1121732569}
+  - 61: {fileID: 1121732571}
   m_Layer: 0
   m_Name: redneck3
   m_TagString: MaskedVampire
@@ -5113,6 +5174,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 63
+--- !u!61 &1121732571
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1121732568}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .349999994, y: .389999986}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1134292805
 GameObject:
   m_ObjectHideFlags: 0
@@ -5529,6 +5601,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1215715423}
   - 212: {fileID: 1215715422}
+  - 61: {fileID: 1215715424}
   m_Layer: 0
   m_Name: table_round
   m_TagString: Untagged
@@ -5571,6 +5644,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 32
+--- !u!61 &1215715424
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1215715421}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .670000017, y: .560000002}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1220742228
 GameObject:
   m_ObjectHideFlags: 0
@@ -5713,7 +5797,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 403906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 103906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_Name
@@ -6162,6 +6246,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1513025425}
   - 212: {fileID: 1513025424}
+  - 61: {fileID: 1513025426}
   m_Layer: 0
   m_Name: redneck2
   m_TagString: MaskedVampire
@@ -6203,6 +6288,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 65
+--- !u!61 &1513025426
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1513025423}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .280000001, y: .649999976}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1572343875
 GameObject:
   m_ObjectHideFlags: 0
@@ -6595,8 +6691,8 @@ PolygonCollider2D:
     m_Paths:
     - - {x: .569633007, y: .282384396}
       - {x: .551311493, y: .0142278671}
-      - {x: .202247143, y: .0299596786}
-      - {x: .180498123, y: .270079851}
+      - {x: .267008781, y: .0299596786}
+      - {x: .25451088, y: .270079851}
 --- !u!1 &1703268967
 GameObject:
   m_ObjectHideFlags: 0
@@ -6994,6 +7090,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1862483474}
   - 212: {fileID: 1862483473}
+  - 61: {fileID: 1862483475}
   m_Layer: 0
   m_Name: redneck1_left
   m_TagString: MaskedVampire
@@ -7035,6 +7132,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 66
+--- !u!61 &1862483475
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862483472}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .409999996, y: .680000007}
+  m_Center: {x: 0, y: 0}
 --- !u!1001 &1870250854
 Prefab:
   m_ObjectHideFlags: 0
@@ -7998,6 +8106,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2105996352}
   - 212: {fileID: 2105996351}
+  - 61: {fileID: 2105996353}
   m_Layer: 0
   m_Name: redneck3
   m_TagString: MaskedVampire
@@ -8039,6 +8148,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 64
+--- !u!61 &2105996353
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2105996350}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .349999994, y: .389999986}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &2116210163
 GameObject:
   m_ObjectHideFlags: 0
