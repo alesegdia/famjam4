@@ -15,16 +15,16 @@ MonoBehaviour:
   - line: Mmmmmmmmm...
     color: {r: .930538058, g: .941176474, b: .747404873, a: 1}
     sendMessage: NextJump
-    JumpOffset: 1
+    JumpOffset: 3
   - line: Not yet...
     color: {r: .930538058, g: .941176474, b: .747404873, a: 1}
     sendMessage: 
     JumpOffset: 1
-  - line: You need to hear 8 more people
+  - line: You need to hear 1 more person
     color: {r: .930538058, g: .941176474, b: .747404873, a: 1}
     sendMessage: 
     JumpOffset: 99999
-  - line: Hey! You has listened all of the 90s sonversation we placed in the game.
+  - line: Hey! You has listened all of the 90s conversation we placed in the game.
       Congratulations!
     color: {r: .930538058, g: .941176474, b: .747404873, a: 1}
     sendMessage: 
@@ -35,5 +35,5 @@ MonoBehaviour:
     JumpOffset: 1
   - line: The truth is inside here...
     color: {r: .930538058, g: .941176474, b: .747404873, a: 1}
-    sendMessage: 
+    sendMessage: LoadEnding
     JumpOffset: 1

@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/Scenes/action_scene/ActionScene.unity
   - enabled: 1
     path: Assets/Scenes/mainmenu_scene/mainmenu.unity
+  - enabled: 1
+    path: Assets/Scenes/alternative_ending/alternative_ending.unity

@@ -44,4 +44,11 @@ public class AlternativeEnding_Handlers : MonoBehaviour {
         }
         msg.callback();
     }
+
+    void AlternativeEndingConv_LoadEnding(MessageACK msg)
+    {
+        msg.received = true;
+        LogicManager.Instance.SetState(LogicManager.LogicStates.ALTERNATIVE_ENDING);
+        LogicManager.Instance.LoadScene( "alternative_ending" );
+    }
 }
