@@ -55,9 +55,9 @@ public class Player : MonoBehaviour {
         }
 		if(winObject)
         {
-			if(canWin && Vector2.Distance(this.transform.position, winObject.transform.position) < 2)
+			if(canWin && Vector2.Distance(this.transform.position, winObject.transform.position) < 1)
             {
-				Application.LoadLevel("Scenes/action_win");
+				Application.LoadLevel("action_win");
                 Debug.Log("WIN");
 			}
         }

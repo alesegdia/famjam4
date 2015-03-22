@@ -240,7 +240,7 @@ MonoBehaviour:
   MovementController: {fileID: 0}
   LookAtController: {fileID: 0}
   LookAtMouseCtrl: {fileID: 0}
-  pawn: {fileID: 0}
+  pawn: {fileID: 5000000}
   WeaponInUse: {fileID: 11400002}
   ConvController: {fileID: 0}
   UpperBodyAnimator: {fileID: 0}
