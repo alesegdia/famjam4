@@ -83,6 +83,7 @@ public class EnemyPool : MonoBehaviour {
             Health h = go.GetComponent<Health>();
             h.currentHealth = h.maxHealth;
             go.transform.position = position;
+            position.z = -2;
             GameObject.Instantiate(cloudPrefab, position, Quaternion.identity);
             return go;
         }
