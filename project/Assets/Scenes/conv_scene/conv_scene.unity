@@ -773,7 +773,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 3500856833
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 848c9cacca4325347af741496eb3edf4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8b79ab444a21b243ac38eaff8d285e4, type: 3}
   m_Color: {r: 1, g: .351724148, b: 0, a: 1}
 --- !u!114 &248060251
 MonoBehaviour:
@@ -3524,7 +3524,7 @@ Prefab:
     - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 848c9cacca4325347af741496eb3edf4,
+      objectReference: {fileID: 21300000, guid: e8b79ab444a21b243ac38eaff8d285e4,
         type: 3}
     - target: {fileID: 21203906, guid: cd95577ae8eea3f43b813c5ffbfec654, type: 2}
       propertyPath: m_SortingLayerID
@@ -6835,6 +6835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 265741026}
+  DoFadeIn: 1
   currentState: 0
 --- !u!4 &2133274177
 Transform:
