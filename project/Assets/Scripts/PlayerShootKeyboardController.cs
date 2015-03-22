@@ -5,11 +5,13 @@ public class PlayerShootKeyboardController : MonoBehaviour {
 
     GameObject crosshair;
     Weapon weaponInUse;
+    ShakeFollowCam shakeCam;
 
 	// Use this for initialization
 	void Start () {
         crosshair = GameObject.FindGameObjectWithTag("Crosshair");
         weaponInUse = GameObject.FindObjectOfType<Player>().WeaponInUse;
+        shakeCam = GameObject.FindObjectOfType<ShakeFollowCam>();
 	}
 	
 	// Update is called once per frame
@@ -17,7 +19,11 @@ public class PlayerShootKeyboardController : MonoBehaviour {
 
 		if( Input.GetMouseButtonDown(0) )
         {
-            weaponInUse.TryShot(crosshair.transform.position - this.transform.position);
+           if( weaponInUse.TryShot(crosshair.transform.position - this.transform.position) )
+           {
+			   Debug.Log("SASDASDASDJ");
+               shakeCam.AddShake(0.1f);
+           }
         }
 
 	}

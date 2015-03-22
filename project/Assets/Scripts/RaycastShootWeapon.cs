@@ -38,6 +38,10 @@ public class RaycastShootWeapon : Weapon {
     Vector3 tmp = new Vector3();
     override protected void Shot(Vector2 dir)
     {
+		// super ñapa incoming!!
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<Rigidbody2D>().AddForce(-dir* 10000f);
+
         RaycastHit2D hit;
         for (int i = 0; i < numBullets; i++)
         {

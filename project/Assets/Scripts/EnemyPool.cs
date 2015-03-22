@@ -10,6 +10,9 @@ public class EnemyPool : MonoBehaviour {
     public List<Transform> initialSpawns;
     GameObject player;
 
+    public GameObject enemyRenderPrefab;
+    public GameObject cloudPrefab;
+
 	// Use this for initialization
 	void Start () {
 
@@ -40,9 +43,22 @@ public class EnemyPool : MonoBehaviour {
             aa.enabled = false;
             EnemyAgent.vampire = false;
             EnemyAgent.aggresive = false;
+            agent.player = player;
+            agent.pawn = go.rigidbody2D;
             agent.SetupAgent();
 
             go.SetActive(false);
+
+            GameObject render = (GameObject) GameObject.Instantiate(enemyRenderPrefab);
+            AngleLookAtAnimatorController alaac = render.GetComponent<AngleLookAtAnimatorController>();
+            FixedFollowController ffc = render.GetComponent<FixedFollowController>();
+            ffc.toFollow = go;
+            alaac.pawn = go;
+            alaac.animator = render.GetComponent<Animator>();
+            alaac.numDirections = 4;
+            enemy.render = render;
+            render.SetActive(false);
+
             pool.Enqueue(go);
         }
 
@@ -52,6 +68,7 @@ public class EnemyPool : MonoBehaviour {
     {
         e.isDead = false;
         e.gameObject.SetActive(false);
+        e.render.SetActive(false);
         pool.Enqueue(e.gameObject);
 	}
 
@@ -61,9 +78,12 @@ public class EnemyPool : MonoBehaviour {
         {
             GameObject go = pool.Dequeue();
             go.SetActive(true);
+            Enemy e = go.GetComponent<Enemy>();
+            e.render.SetActive(true);
             Health h = go.GetComponent<Health>();
             h.currentHealth = h.maxHealth;
             go.transform.position = position;
+            GameObject.Instantiate(cloudPrefab, position, Quaternion.identity);
             return go;
         }
 		else
