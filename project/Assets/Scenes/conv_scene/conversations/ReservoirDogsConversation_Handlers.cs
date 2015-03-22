@@ -11,7 +11,8 @@ public class ReservoirDogsConversation_Handlers : MonoBehaviour
     {
         this.messageToken = messageToken;
         this.messageToken.received = true;
-        StartCoroutine( lookAndBackCoroutine() );
+        //StartCoroutine( lookAndBackCoroutine() );
+        this.messageToken.callback();
     }
 
     private IEnumerator lookAndBackCoroutine()

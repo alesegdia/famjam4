@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
+  m_Name: BraveHeartConv
+  m_EditorClassIdentifier: 
+  lines:
+  - line: Aye, fight and you may die. Run, and you'll live... at least a while. And
+      dying in your beds, many years from now, would you be willin' to trade ALL the
+      days, from this day to that, for one chance, just one chance, to come back here
+      and tell our enemies that they may take our lives, but they'll never take...
+      OUR FREEDOM!
+    color: {r: 0, g: .462069035, b: 1, a: 1}
+    sendMessage: 
+  - line: Why the hell are you talking like you were somekind of a motherfuckin' Scottish
+      hero?
+    color: {r: 1, g: .812373221, b: .727941155, a: 1}
+    sendMessage: 
+  - line: '...'
+    color: {r: 0, g: .4627451, b: .996078432, a: 1}
+    sendMessage: 
+  - line: What? You wish to say a word.
+    color: {r: .996078432, g: .807843149, b: .725490212, a: 1}
+    sendMessage: 
+  - line: FREDOOOOOOOOOOOM!!!!!
+    color: {r: 0, g: .4627451, b: .996078432, a: 1}
+    sendMessage: 
+  - line: Jeez...guess that's enough tequila shots for today
+    color: {r: .992156863, g: .80392158, b: .721568644, a: 1}
+    sendMessage: 
