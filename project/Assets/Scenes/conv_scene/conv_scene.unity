@@ -1703,6 +1703,7 @@ MonoBehaviour:
   CameraFollow: {fileID: 265741023}
   weirdo1: {fileID: 818724652}
   weirdo2: {fileID: 377949141}
+  UpperPartAnimator: {fileID: 2081814329}
 --- !u!1001 &544127044
 Prefab:
   m_ObjectHideFlags: 0
