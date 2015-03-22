@@ -16,12 +16,17 @@ MonoBehaviour:
       smurf haha
     color: {r: .627451003, g: .00392156886, b: .53725493, a: 1}
     sendMessage: MoveCam1
-  - line: And the other two over there! What the fuck is wrong with them?
+    JumpOffset: 1
+  - line: And the other two over there! What the fuck is wrong with them? They look
+      like that film about dogs and reservoirs
     color: {r: .623529434, g: .00392156886, b: .533333361, a: 1}
     sendMessage: MoveCam2
+    JumpOffset: 1
   - line: Actually...you know, you're also a bit...colorful
-    color: {r: 1, g: 1, b: 1, a: 1}
+    color: {r: .396078438, g: .396078438, b: .396078438, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: What? me? You're such a racist amigo.
     color: {r: .619607866, g: .00392156886, b: .529411793, a: 1}
     sendMessage: 
+    JumpOffset: 1

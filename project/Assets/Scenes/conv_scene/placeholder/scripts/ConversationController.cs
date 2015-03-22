@@ -29,10 +29,11 @@ public class ConversationController : MonoBehaviour
         {
             // get the one we ar elooking at
             KeyValuePair<Npc,float> nearest = new KeyValuePair<Npc,float>( null, float.MaxValue );
+            Vector3 dir = player.GetLookDirection();
             foreach (var npc in nearNpcs.Values)
             {
                 Vector3 dist = npc.transform.position - player.pawn.transform.position;
-                RaycastHit2D rh = Physics2D.Raycast( player.pawn.transform.position, player.pawn.transform.up, dist.magnitude, LayerMask.GetMask( "NPC" ) );
+                RaycastHit2D rh = Physics2D.Raycast( player.pawn.transform.position, dir, dist.magnitude, LayerMask.GetMask( "NPC" ) );
                 if( rh.collider == npc.collider2D && rh.distance < nearest.Value )
                 {
                     nearest = new KeyValuePair<Npc, float>( npc, rh.distance );

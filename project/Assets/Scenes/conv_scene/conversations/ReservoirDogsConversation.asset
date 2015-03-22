@@ -16,30 +16,38 @@ MonoBehaviour:
       with a big dick.  The whole song is a metaphor for big dicks.
     color: {r: .551470578, g: .330882341, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: Oh c'mon man, no it's not.  It's about a girl who is very vulnerable and
       she's been fucked over a few times. Then she meets some guy who's really sensitive
     color: {r: 0, g: .586206913, b: 1, a: 1}
-    sendMessage: 
+    sendMessage: LookPlayerAndBack
+    JumpOffset: 1
   - line: Whoa...whoa...time out Greenbay. Tell that bullshit to other (like the one
       who's standing next to me)
     color: {r: .549019635, g: .329411775, b: 0, a: 1}
     sendMessage: LookPlayerAndBack
+    JumpOffset: 1
   - line: Anyway, it's not about a nice girl who meets a sensitive boy. That's "True
       Blue" man.
     color: {r: .549019635, g: .329411775, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: Which one is "True Blue?"
     color: {r: 1, g: .351724148, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: You don't remember "True Blue?" That was a big ass hit for Madonna.  Shit,
       I don't even  follow this Tops In Pops shit, and I've at least heard of "True
       Blue."
     color: {r: 1, g: .352941185, b: 1, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: Look, asshole, I didn't say I ain't heard of it.  All I asked was how does
       it go?  Excuse me for not being the world's biggest Madonna fan.
     color: {r: .996078432, g: .352941185, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: I hate Madonna.
     color: {r: .996078432, g: .352941185, b: .996078432, a: 1}
     sendMessage: 
+    JumpOffset: 1

@@ -10,12 +10,18 @@ public class Conversation : ScriptableObject
 [System.Serializable]
 public class ConversationLine
 {
+    public ConversationLine()
+    {
+        JumpOffset = 1;
+    }
+
     [SerializeField]
     private string line;
 
     public string Line
     {
         get { return line; }
+        set { line = value; }
     }
 
     [SerializeField]
@@ -33,4 +39,7 @@ public class ConversationLine
     {
         get { return sendMessage; }
     }
+
+    [SerializeField]
+    public int JumpOffset = 1;
 }

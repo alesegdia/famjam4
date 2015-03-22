@@ -25,7 +25,23 @@ public class ConversationManager : MonoBehaviour
     private ConversationLineState currentLineState;
 
     private Conversation currentConversation;
+
+    public Conversation CurrentConversation
+    {
+        get { return currentConversation; }
+    }
+
     private int currentIndex;
+
+    public int CurrentIndex
+    {
+        get { return currentIndex; }
+    }
+
+    public ConversationLine CurrentLine
+    {
+        get {  return currentConversation.lines[ currentIndex ]; }
+    }
 
 	// Use this for initialization
 	void Start () 
@@ -91,7 +107,9 @@ public class ConversationManager : MonoBehaviour
 
     private bool nextLine()
     {
-        if (++currentIndex < currentConversation.lines.Length)
+        //int newIndex = currentIndex + currentConversation.lines[currentIndex].JumpOffset;
+        currentIndex += +currentConversation.lines[currentIndex].JumpOffset;
+        if (currentIndex >= 0 && currentIndex < currentConversation.lines.Length)
         {
             return true;
         }

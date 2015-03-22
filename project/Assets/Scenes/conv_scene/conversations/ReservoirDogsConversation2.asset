@@ -16,43 +16,55 @@ MonoBehaviour:
       got into her "Papa Don't Preach" phase, I don't know, I tuned out.
     color: {r: 0, g: .586206913, b: 1, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: Hey, fuck all that, I'm making a point here.  You're gonna make me lose
       my train of thought.
     color: {r: .549019635, g: .329411775, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: And that dirty fucker is still around, it really annoys me.
     color: {r: .549019635, g: .329411775, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: Where the fuck was I?
     color: {r: .549019635, g: .329411775, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: You said "True Blue" was about a nice girl who finds a sensitive fella.  But
       "Like a Virgin" was a metaphor for big dicks.
     color: {r: 1, g: .351724148, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: Let me tell ya what "Like a Virgin"'s about.  It's about some cooze who's
       a regular fuck machine. I mean all the time, morning, day, night, afternoon,
       dick, polla, dick, polla, dick, polla, dick, polla, dick, polla, dick.
     color: {r: .545098066, g: .329411775, b: 0, a: 1}
-    sendMessage: 
+    sendMessage: LookPlayerAndBack
+    JumpOffset: 1
   - line: Just what the fuck "polla" means?
     color: {r: 0, g: .580392182, b: .996078432, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: Dick in spanish.
     color: {r: .541176498, g: .329411775, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: How many dicks was that?
     color: {r: 0, g: .580392182, b: .996078432, a: 1}
-    sendMessage: 
+    sendMessage: LookPlayerAndBack
+    JumpOffset: 1
   - line: A lot.
     color: {r: 1, g: 1, b: 1, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: "Then one day she meets a Raul 'Ram\xF3n' Armenteros motherfucker, and it's
       like, whoa baby.  This mother fucker's like Charles Bronson in \"The Great Escape.\"
       \ He's diggin tunnels.  Now she's gettin this serious dick action, she's feelin
       something she ain't felt since forever. Pain. Dolor!"
     color: {r: .53725493, g: .329411775, b: 0, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: And here it goes the spanish again...
     color: {r: .996078432, g: .996078432, b: .996078432, a: 1}
     sendMessage: 
+    JumpOffset: 1
