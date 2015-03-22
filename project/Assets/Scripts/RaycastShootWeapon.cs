@@ -20,6 +20,8 @@ public class RaycastShootWeapon : Weapon {
     Quaternion quatSpreadAngleFrom;
     Quaternion quatSpreadAngleTo;
 
+    public AudioSource shotSound;
+
     public float knockbackForce = 500f;
 
 	// Use this for initialization
@@ -38,6 +40,7 @@ public class RaycastShootWeapon : Weapon {
     Vector3 tmp = new Vector3();
     override protected void Shot(Vector2 dir)
     {
+        shotSound.Play();
 		// super ñapa incoming!!
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<Rigidbody2D>().AddForce(-dir* 10000f);
@@ -56,6 +59,11 @@ public class RaycastShootWeapon : Weapon {
                 if (Util.CheckIfLayer(damageLayer.value, hit.collider.gameObject.layer))
                 {
                     hit.collider.gameObject.GetComponent<Health>().currentHealth -= damage;
+					GameObject.FindGameObjectWithTag("vamphurt").GetComponent<AudioSource>().Play();
+					if( hit.collider.gameObject.GetComponent<Health>().currentHealth <= 0 )
+                    {
+                        GameObject.FindGameObjectWithTag("vampdies").GetComponent<AudioSource>().Play();
+                    }
                     Rigidbody2D body = hit.collider.gameObject.GetComponent<Rigidbody2D>();
                     body.AddForce(-hit.normal * knockbackForce);
                 }

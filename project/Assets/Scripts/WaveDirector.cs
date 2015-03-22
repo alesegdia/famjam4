@@ -84,6 +84,8 @@ public class WaveDirector : MonoBehaviour {
 				thirdWave.ActivateAllSpawners();
                 winBox.SetActive(true);
                 player.canWin = true;
+                player.winObject = winBox;
+                goBox.SetActive(true);
 			}
 			else if( secondRelax.Timeline(baseTime) )
             {
@@ -113,6 +115,7 @@ public class WaveDirector : MonoBehaviour {
 	}
 
     public GameObject winBox;
+    public GameObject goBox;
 
     private void HumanToVampireTransformation()
     {

@@ -48,6 +48,7 @@ public class RaycastMeleeWeapon : Weapon {
             {
 				alreadyHit.Add(hit.collider);
                 hit.collider.gameObject.GetComponent<Health>().currentHealth -= damage;
+				GameObject.FindGameObjectWithTag("playerhurt").GetComponent<AudioSource>().Play();
             }
         }
     }
