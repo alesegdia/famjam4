@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
+  m_Name: AmericanPieConv2
+  m_EditorClassIdentifier: 
+  lines:
+  - line: I have to admit, you know, I did the fair bit of
+    color: {r: .941176474, g: .588235259, b: 1, a: 1}
+    sendMessage: 
+    JumpOffset: 1
+  - line: '...'
+    color: {r: .937254906, g: .58431375, b: .996078432, a: 1}
+    sendMessage: 
+    JumpOffset: 1
+  - line: Masturbating when I was a little younger. I used to call it stroking the
+      salami, yeah, you know, pounding the old pud.
+    color: {r: .933333337, g: .580392182, b: .992156863, a: 1}
+    sendMessage: 
+    JumpOffset: 1
+  - line: I never did it with baked goods, but you I know a guy...jeez. He pets the
+      one-eyed snake 5-6 times a day.
+    color: {r: .929411769, g: .576470613, b: .988235295, a: 1}
+    sendMessage: 
+    JumpOffset: 1

@@ -5,6 +5,7 @@ using System.Collections;
 public class FaderUI : MonoBehaviour {
     public float fadeSpeed = 1.5f;          // Speed that the screen fades to and from black.
 
+
     void Awake()
     {
         // Set the texture so that it is the the size of the screen and covers it.

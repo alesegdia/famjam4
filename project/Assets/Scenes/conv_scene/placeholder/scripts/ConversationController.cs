@@ -34,6 +34,15 @@ public class ConversationController : MonoBehaviour
             {
                 Vector3 dist = npc.transform.position - player.pawn.transform.position;
                 RaycastHit2D rh = Physics2D.Raycast( player.pawn.transform.position, dir, dist.magnitude, LayerMask.GetMask( "NPC" ) );
+                /*if ( rh.collider == npc.collider2D )
+                {
+                    Debug.Log( "Same collider" );
+                }
+                if ( rh.distance < nearest.Value )
+                {
+                    Debug.Log("Nearer");
+                }*/
+
                 if( rh.collider == npc.collider2D && rh.distance < nearest.Value )
                 {
                     nearest = new KeyValuePair<Npc, float>( npc, rh.distance );

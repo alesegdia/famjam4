@@ -9,22 +9,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
-  m_Name: AmericanPieConv
+  m_Name: RandomConv
   m_EditorClassIdentifier: 
   lines:
-  - line: "Dude that Sat\xE1nico Pandemonium's a MILF!"
-    color: {r: .944827437, g: 1, b: 0, a: 1}
+  - line: Hey don't make fun of my friend!
+    color: {r: 1, g: .812373221, b: .727941155, a: 1}
     sendMessage: 
     JumpOffset: 1
-  - line: What the hell is that?
-    color: {r: .941176474, g: .588235259, b: 1, a: 1}
+  - line: And now...
+    color: {r: 1, g: .812373221, b: .727941155, a: 1}
     sendMessage: 
     JumpOffset: 1
-  - line: M-I-L-F Mom I'd Like to Fuck!
-    color: {r: .944827437, g: 1, b: 0, a: 1}
-    sendMessage: 
-    JumpOffset: 1
-  - line: Yeah dude! Yeah!
-    color: {r: .941176474, g: .588235259, b: 1, a: 1}
+  - line: Go fuck yourself!
+    color: {r: 1, g: .812373221, b: .727941155, a: 1}
     sendMessage: 
     JumpOffset: 1
