@@ -85,6 +85,8 @@ public class DayTimerUI : MonoBehaviour
 
     void NotifyMidnight()
     {
+        ConversationUI convUI = FindObjectOfType<ConversationUI>();
+        convUI.enabled = false;
         if( LogicManager.Instance.CurrentState != LogicManager.LogicStates.ALTERNATIVE_ENDING )
         {
             LogicManager.Instance.LoadScene( "ActionScene" );
