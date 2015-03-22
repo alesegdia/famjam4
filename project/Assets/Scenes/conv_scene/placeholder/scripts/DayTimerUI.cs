@@ -85,6 +85,10 @@ public class DayTimerUI : MonoBehaviour
 
     void NotifyMidnight()
     {
-        LogicManager.Instance.LoadScene( "ActionScene" );
+        if( LogicManager.Instance.CurrentState != LogicManager.LogicStates.ALTERNATIVE_ENDING )
+        {
+            LogicManager.Instance.LoadScene( "ActionScene" );
+        }
+        this.enabled = false;
     }
 }
