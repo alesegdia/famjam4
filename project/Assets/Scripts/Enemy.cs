@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour {
 
     public EnemyPool pool;
     public bool isDead = false;
+    public GameObject render;
     Health health;
 
 	// Use this for initialization

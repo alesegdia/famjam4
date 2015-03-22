@@ -291,6 +291,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110296286
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: prota1_LD_NW
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 7d0607b86ca33c8458366678c9319c0f, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 76, y: 628, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110297103
 State:
   m_ObjectHideFlags: 3
@@ -323,33 +338,10 @@ StateMachine:
   - {fileID: 110224091}
   - {fileID: 110217088}
   - {fileID: 110256420}
+  - {fileID: 110296286}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
-    data:
-      first: {fileID: 110256420}
-      second: []
-    data:
-      first: {fileID: 110217088}
-      second: []
-    data:
-      first: {fileID: 110224091}
-      second: []
-    data:
-      first: {fileID: 110278742}
-      second: []
-    data:
-      first: {fileID: 110281837}
-      second: []
-    data:
-      first: {fileID: 110297103}
-      second: []
-    data:
-      first: {fileID: 110283644}
-      second: []
-    data:
-      first: {fileID: 110200000}
-      second: []
     data:
       first: {fileID: 0}
       second:
@@ -361,6 +353,30 @@ StateMachine:
       - {fileID: 110154763}
       - {fileID: 110199382}
       - {fileID: 110161179}
+    data:
+      first: {fileID: 110200000}
+      second: []
+    data:
+      first: {fileID: 110283644}
+      second: []
+    data:
+      first: {fileID: 110297103}
+      second: []
+    data:
+      first: {fileID: 110281837}
+      second: []
+    data:
+      first: {fileID: 110278742}
+      second: []
+    data:
+      first: {fileID: 110224091}
+      second: []
+    data:
+      first: {fileID: 110217088}
+      second: []
+    data:
+      first: {fileID: 110256420}
+      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

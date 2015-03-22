@@ -5,7 +5,7 @@ public class MovementKeyboardController : MonoBehaviour {
 
     public GameObject pawn;
     Rigidbody2D pawnRigidbody;
-    public Vector2 max_speed = new Vector2(4, 4);
+    public float maxSpeed = 4;
 
     public bool left, right, up, down;
 
@@ -31,6 +31,6 @@ public class MovementKeyboardController : MonoBehaviour {
 		if( up ) dir.y = 1;
 		else if( down ) dir.y = -1;
 
-        pawnRigidbody.velocity = Vector2.Scale(dir, max_speed);
+        pawnRigidbody.velocity = dir * maxSpeed;
 	}
 }

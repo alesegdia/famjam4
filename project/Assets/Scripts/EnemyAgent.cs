@@ -10,6 +10,8 @@ public class EnemyAgent : MonoBehaviour {
     public AlwaysAttack alwaysAttack = null;
     public GameObject humanModel;
     public GameObject vampireModel;
+    public Rigidbody2D pawn;
+    public GameObject player;
 
 	// Use this for initialization
 	void Start () {
@@ -27,5 +29,16 @@ public class EnemyAgent : MonoBehaviour {
         followController.enabled = aggresive;
         lookAtController.enabled = aggresive;
         alwaysAttack.enabled = aggresive;
+		if( Vector2.Distance(pawn.transform.position, player.transform.position) < 0.5 )
+        {
+            followController.enabled = false;
+            Vector2 vel = pawn.velocity;
+            vel *= 0.9f;
+            pawn.velocity = vel;
+        }
+		else
+        {
+            followController.enabled = aggresive;
+        }
 	}
 }

@@ -17,15 +17,16 @@ public class Weapon : MonoBehaviour {
 	
 	}
 
-	public void TryShot(Vector2 dir)
+	public bool TryShot(Vector2 dir)
     {
 		if( Time.time > nextShoot )
 		{
 			nextShoot = Time.time + rateOfFire;
 			Shot(dir);
 			tryShotLastFrame = false;
+            return true;
 		}
-
+        return false;
     }
 
 	protected virtual void Shot(Vector2 dir) {

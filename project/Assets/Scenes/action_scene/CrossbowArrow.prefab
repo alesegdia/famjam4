@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CrossbowArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +83,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   maxTargetsPenetration: 3
+  damageLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
