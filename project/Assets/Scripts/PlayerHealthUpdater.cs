@@ -26,6 +26,10 @@ public class PlayerHealthUpdater : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+        AdjustCurrentHealth(0);
 	}
+
+    public void AdjustCurrentHealth(int adj)
+    {
+    }
 }

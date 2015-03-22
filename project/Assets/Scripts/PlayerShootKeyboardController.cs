@@ -21,7 +21,6 @@ public class PlayerShootKeyboardController : MonoBehaviour {
         {
            if( weaponInUse.TryShot(crosshair.transform.position - this.transform.position) )
            {
-			   Debug.Log("SASDASDASDJ");
                shakeCam.AddShake(0.1f);
            }
         }

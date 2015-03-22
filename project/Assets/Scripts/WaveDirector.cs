@@ -53,6 +53,7 @@ public class WaveDirector : MonoBehaviour {
 
     float baseTime;
     bool isPlaying;
+    public Player player;
 
 	// Use this for initialization
 	void Start () {
@@ -61,6 +62,7 @@ public class WaveDirector : MonoBehaviour {
         Play();
         secondWave.DeactivateAllSpawners();
         thirdWave.DeactivateAllSpawners();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 	}
 
 	public void Play()
@@ -80,6 +82,8 @@ public class WaveDirector : MonoBehaviour {
             {
                 Debug.Log("OH SHIT NOT AGAIN!");
 				thirdWave.ActivateAllSpawners();
+                winBox.SetActive(true);
+                player.canWin = true;
 			}
 			else if( secondRelax.Timeline(baseTime) )
             {
@@ -107,6 +111,8 @@ public class WaveDirector : MonoBehaviour {
             }
         }
 	}
+
+    public GameObject winBox;
 
     private void HumanToVampireTransformation()
     {
