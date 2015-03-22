@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1235632738}
   - 82: {fileID: 1235632739}
+  - 114: {fileID: 1235632737}
   m_Layer: 0
   m_Name: game-over
   m_TagString: Untagged
@@ -140,6 +141,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1235632737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235632736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ef76df80949fe40b06f2696538dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1235632738
 Transform:
   m_ObjectHideFlags: 0
