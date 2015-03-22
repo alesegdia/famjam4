@@ -18,7 +18,8 @@ public class Player : MonoBehaviour {
 	public void Start()
     {
         health = GetComponent<Health>();
-        pawn = GetComponent<Rigidbody2D>();
+        if( !pawn )
+            pawn = GetComponent<Rigidbody2D>();
     }
 
     public void EnableAllMovementControllers( bool enabled )
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour {
     {
         pawn.angularDrag = 0;
         pawn.angularVelocity = 0;
-		if(health.currentHealth < 0)
+		if( health && health.currentHealth < 0)
         {
             Application.LoadLevel("action_lose");
             Debug.Log("LOSE");

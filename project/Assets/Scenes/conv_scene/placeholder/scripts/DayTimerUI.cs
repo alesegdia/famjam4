@@ -54,7 +54,7 @@ public class DayTimerUI : MonoBehaviour
     void OnGUI()
     {
         Rect screenRect = new Rect(Screen.width * SkipBtVPCoords.x, Screen.height * (1 - SkipBtVPCoords.y - SkipBtVPCoords.height), Screen.width * SkipBtVPCoords.width, Screen.height * SkipBtVPCoords.height);
-        if( GUI.Button( screenRect, "Wait until midnight", skin.button ) )
+        if( GUI.Button( screenRect, "", skin.button ) )
         {
             StopAllCoroutines();
             //notify the midnight
