@@ -42,7 +42,7 @@ public class ConversationController : MonoBehaviour
 
             if( nearest.Key )
             {
-                nearest.Key.Interact();
+                    nearest.Key.Interact();
             }
         }
     }
