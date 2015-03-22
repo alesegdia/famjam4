@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b4d7f03ec89744784d941ab149304e, type: 3}
+  m_Name: XexacoConver
+  m_EditorClassIdentifier: 
+  lines:
+  - line: But, but, but the music is not half bad. Don't you think?
+    color: {r: .465114504, g: .566176474, b: .432958484, a: 1}
+    sendMessage: 
+    JumpOffset: 1
+  - line: Yeah, yea, yeah...whatever...
+    color: {r: 0, g: .536764741, b: .470131904, a: 1}
+    sendMessage: 
+    JumpOffset: 1

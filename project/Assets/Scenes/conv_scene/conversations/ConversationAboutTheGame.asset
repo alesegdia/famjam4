@@ -15,12 +15,16 @@ MonoBehaviour:
   - line: Yeah you know, we wanted to do something cool
     color: {r: 0, g: .534533501, b: .610294104, a: 1}
     sendMessage: 
+    JumpOffset: 1
   - line: But as you can see is kinda crap
     color: {r: 0, g: .529411793, b: .607843161, a: 1}
     sendMessage: LookPlayer
+    JumpOffset: 1
   - line: Actually, I like the game uh
     color: {r: .566176474, g: 0, b: .550557911, a: 1}
     sendMessage: 
-  - line: Don't hear him, he's just one of the desginers
+    JumpOffset: 1
+  - line: Don't hear him, he's just one of the designers
     color: {r: 0, g: .525490224, b: .603921592, a: 1}
     sendMessage: LookBack
+    JumpOffset: 1

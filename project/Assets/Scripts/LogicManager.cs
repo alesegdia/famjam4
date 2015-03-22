@@ -3,10 +3,15 @@ using System.Collections;
 
 public class LogicManager : MonoBehaviour {
 
+    public FaderUI fader;
+
+    public bool DoFadeIn = true;
+
     public enum LogicStates
     {
         PLAYING_CONVERSATION_PART = 0,
-        CONVERSATION
+        CONVERSATION,
+        ALTERNATIVE_ENDING
     };
 
     [SerializeField]
@@ -128,6 +133,25 @@ public class LogicManager : MonoBehaviour {
     public void LoadScene( string sceneName )
     {
         player.EnableAll(false);
-        Application.LoadLevel( sceneName );
+        if (fader)
+        {
+            //Application.LoadLevel(sceneName);
+            //fader.FadeOut();
+            StartCoroutine( fadeOutCoroutine( sceneName ) );
+        }
+        else 
+        {
+            Application.LoadLevel(sceneName);
+        }
+    }
+
+    IEnumerator fadeOutCoroutine( string sceneToLoad )
+    {
+        while( fader.guiTexture.color.a < 0.95 )
+        {
+            fader.FadeOut();
+            yield return 0;
+        }
+        Application.LoadLevel(sceneToLoad);
     }
 }
