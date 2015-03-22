@@ -11,6 +11,8 @@ public class NonsenseConv1_Handlers : MonoBehaviour {
 
     public GameObject weirdo2;
 
+    public Animator UpperPartAnimator;
+
     void NonsenseConv1_MoveCam1(MessageACK msg)
     {
         this.msg = msg;
@@ -35,10 +37,17 @@ public class NonsenseConv1_Handlers : MonoBehaviour {
         Vector3 end = weirdo1.transform.position;
         end.z = Camera.main.transform.position.z;
         // look there
-        Quaternion original_rot = LogicManager.Instance.Player.pawn.transform.rotation;
+        /*Quaternion original_rot = LogicManager.Instance.Player.pawn.transform.rotation;
         Vector3 delta = end - LogicManager.Instance.Player.pawn.transform.position;
         float rot_z = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
-        LogicManager.Instance.Player.pawn.transform.rotation = Quaternion.AngleAxis(rot_z - 90, Vector3.forward);
+        LogicManager.Instance.Player.pawn.transform.rotation = Quaternion.AngleAxis(rot_z - 90, Vector3.forward);*/
+        int currentDir = UpperPartAnimator.GetInteger("Direction");
+        Vector3 delta = end - LogicManager.Instance.Player.pawn.transform.position;
+        float rot_z = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
+        Quaternion rot = Quaternion.AngleAxis(rot_z - 90, Vector3.forward);
+        float angle = rot.eulerAngles.z;
+        int dir = ((int)((360f - angle + 180f / 8) / (360f / 8)));
+        UpperPartAnimator.SetInteger("Direction", dir);
 
         while (t < 1)
         {
@@ -55,7 +64,8 @@ public class NonsenseConv1_Handlers : MonoBehaviour {
             yield return 0;
         }
         CameraFollow.enabled = true;
-        LogicManager.Instance.Player.pawn.transform.rotation = original_rot;
+        //LogicManager.Instance.Player.pawn.transform.rotation = original_rot;
+        UpperPartAnimator.SetInteger("Direction", currentDir);
         msg.callback();
     }
 
@@ -68,11 +78,13 @@ public class NonsenseConv1_Handlers : MonoBehaviour {
         Vector3 end = weirdo2.transform.position;
         end.z = Camera.main.transform.position.z;
 
-        // look there
-        Quaternion original_rot = LogicManager.Instance.Player.pawn.transform.rotation;
+        int currentDir = UpperPartAnimator.GetInteger("Direction");
         Vector3 delta = end - LogicManager.Instance.Player.pawn.transform.position;
         float rot_z = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
-        LogicManager.Instance.Player.pawn.transform.rotation = Quaternion.AngleAxis(rot_z - 90, Vector3.forward);
+        Quaternion rot = Quaternion.AngleAxis(rot_z - 90, Vector3.forward);
+        float angle = rot.eulerAngles.z;
+        int dir = ((int)((360f - angle + 180f / 8) / (360f / 8)));
+        UpperPartAnimator.SetInteger("Direction", dir);
 
         while (t < 1)
         {
@@ -89,7 +101,8 @@ public class NonsenseConv1_Handlers : MonoBehaviour {
             yield return 0;
         }
         CameraFollow.enabled = true;
-        LogicManager.Instance.Player.pawn.transform.rotation = original_rot;
+        //LogicManager.Instance.Player.pawn.transform.rotation = original_rot;
+        UpperPartAnimator.SetInteger("Direction", currentDir);
         msg.callback();
     }
 }

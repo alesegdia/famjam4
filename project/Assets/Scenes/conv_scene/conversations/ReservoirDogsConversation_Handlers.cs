@@ -7,6 +7,28 @@ public class ReservoirDogsConversation_Handlers : MonoBehaviour
 
     private MessageACK messageToken;
 
+    public void ReservoirDogsConversation_Look(MessageACK messageToken)
+    {
+        this.messageToken = messageToken;
+        this.messageToken.received = true;
+        Vector3 scale = MrBrown.transform.localScale;
+        scale.x *= -1;
+        MrBrown.transform.localScale = scale;
+        //StartCoroutine(lookAndBackCoroutine());
+        this.messageToken.callback();
+    }
+
+    public void ReservoirDogsConversation_LookBack(MessageACK messageToken)
+    {
+        this.messageToken = messageToken;
+        this.messageToken.received = true;
+        Vector3 scale = MrBrown.transform.localScale;
+        scale.x *= -1;
+        MrBrown.transform.localScale = scale;
+        //StartCoroutine(lookAndBackCoroutine());
+        this.messageToken.callback();
+    }
+
     public void ReservoirDogsConversation_LookPlayerAndBack(MessageACK messageToken)
     {
         this.messageToken = messageToken;

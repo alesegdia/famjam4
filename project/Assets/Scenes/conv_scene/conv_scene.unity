@@ -1029,7 +1029,7 @@ MonoBehaviour:
     width: .300000012
     height: .200000003
   skin: {fileID: 11400000, guid: 872ee58173b2c2a49b3787a06da5433f, type: 2}
-  SecondsPerHour: 5
+  SecondsPerHour: 15
   InitialTimeHours: 12
 --- !u!131 &265741027
 GUITexture:

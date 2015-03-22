@@ -15,12 +15,12 @@ MonoBehaviour:
   - line: Hey you know that Madonna's song that's all about a girl who digs a guy
       with a big dick.  The whole song is a metaphor for big dicks.
     color: {r: .551470578, g: .330882341, b: 0, a: 1}
-    sendMessage: 
+    sendMessage: Look
     JumpOffset: 1
   - line: Oh c'mon man, no it's not.  It's about a girl who is very vulnerable and
       she's been fucked over a few times. Then she meets some guy who's really sensitive
     color: {r: 0, g: .586206913, b: 1, a: 1}
-    sendMessage: LookPlayerAndBack
+    sendMessage: LookBack
     JumpOffset: 1
   - line: Whoa...whoa...time out Greenbay. Tell that bullshit to other (like the one
       who's standing next to me)
