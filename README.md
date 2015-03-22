@@ -1,8 +1,8 @@
 
 # Authoring
 
-* Juan José Bernal Rodríguez (graphics)
-* Mateo Pérez (graphics)
+* Mateo PÃ©rez (graphics)
+* Juan JosÃ© Bernal RodrÃ­guez (graphics)
 * Rolemusic (music)
-* Daniel Márquez Quintanilla (code)
-* Alejandro Seguí Díaz (code)
+* Daniel MÃ¡rquez Quintanilla (code)
+* Alejandro SeguÃ­ DÃ­az (code)
