@@ -49,6 +49,8 @@ public class AlternativeEnding_Handlers : MonoBehaviour {
     {
         msg.received = true;
         LogicManager.Instance.SetState(LogicManager.LogicStates.ALTERNATIVE_ENDING);
+        DayTimerUI ui = FindObjectOfType<DayTimerUI>();
+        ui.enabled = false;
         LogicManager.Instance.LoadScene( "alternative_ending" );
     }
 }

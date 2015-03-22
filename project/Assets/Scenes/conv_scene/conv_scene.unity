@@ -1025,7 +1025,7 @@ MonoBehaviour:
     width: .300000012
     height: .200000003
   skin: {fileID: 11400000, guid: 872ee58173b2c2a49b3787a06da5433f, type: 2}
-  SecondsPerHour: 30
+  SecondsPerHour: 5
   InitialTimeHours: 12
 --- !u!131 &265741027
 GUITexture:
@@ -4799,7 +4799,7 @@ Transform:
   - {fileID: 437519249}
   - {fileID: 811725570}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1389613243
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,7 +5101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1001 &1442379307
 Prefab:
   m_ObjectHideFlags: 0
