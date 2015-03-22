@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/conv_scene/conv_scene.unity
   - enabled: 1
     path: Assets/Scenes/action_scene/ActionScene.unity
+  - enabled: 1
+    path: Assets/Scenes/mainmenu_scene/mainmenu.unity
