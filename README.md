@@ -1,8 +1,12 @@
 
-# Authoring
+# Picando Hasta El Amanecer
 
-* Mateo Pérez (graphics)
+Talk with a variety of 90's movies characters, but take care of not staying at midnight...
+
+## Authoring
+
+* Mateo Pérez (graphics, sfx)
 * Juan José Bernal Rodríguez (graphics)
-* Rolemusic (music)
+* Rolemusic (music, andale)
 * Daniel Márquez Quintanilla (code)
 * Alejandro Seguí Díaz (code)
